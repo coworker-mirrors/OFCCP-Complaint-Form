@@ -1,0 +1,835 @@
+<html>
+<!-------------------------------------------------------
+COMPANY: VIATEQ CORPORATION
+AUTHOR: Dennis Dunston
+DATE: October 2016
+DESCRIPTION: Form translation.
+-------------------------------------------------------->
+<HEAD>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+<meta name="description" content="VIATEQ CORPORATION">
+<meta name="keywords" content="VIATEQ CORPORATION">
+
+
+<!-------------------------------------------------------
+STYLE GUIDE 
+-------------------------------------------------------->
+<script language="javascript" type="text/javascript" src="datetimepicker.js">
+</script>
+
+<style>
+body {background-color: white;}
+h1 {
+    	color: black;
+    	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 15px;
+}
+
+h2 {
+    	color: black;
+    	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    	font-size: 22px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 20px;
+}
+
+h3 {
+    	color: black;
+    	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    	font-size: 11px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 9px;
+}
+input {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+}
+
+textarea {
+    border: 0;
+    outline: 0;
+    background: #F0F8FF;
+    border-bottom: 1px solid black;
+}
+</style>
+</HEAD>
+
+<TITLE>Form Translation</TITLE>
+
+<body>
+<!-------------------------------------------------------
+STYLE GUIDE 
+-------------------------------------------------------->
+<script>
+
+function validateForm() {
+    document.myform.submit();
+}
+
+</script>
+<!-------------------------------------------------------
+STYLE GUIDE 
+-------------------------------------------------------->
+<script>
+function clear_form() {
+    document.myform.reset();
+	return false;
+}
+</script>
+
+<!-------------------------------------------------------
+STYLE GUIDE 
+-------------------------------------------------------->
+<script>
+
+function print_form() {
+   window.print();
+ window.close();
+}
+
+function instructions() {
+    var myWindow = window.open("http://www.conceptlabs.com/viateq/demo/english_form_instructions.html","_blank", "height=900, width=650, status=yes, toolbar=no, menubar=no, location=no");
+
+
+}
+</script>
+
+
+
+
+
+
+<!-------------------------------------------------------
+ 
+-------------------------------------------------------->
+
+<!------------------------
+Outer Table
+------------------------->
+
+<table bgcolor="white" width="800px" border="0" cellspacing="0" cellpadding="0" align="center" cols=1>
+<!------------------------
+
+------------------------->
+<tr>
+<td valign="top">
+<br>
+<br>
+<!-------------------------------------------------------
+ 
+-------------------------------------------------------->
+<div align="center">
+	<!------------------------
+	FORM
+	------------------------->
+	<table width="800px" border="0" cellspacing="0" cellpadding="0" align="center" cols=2>
+		<tbody>
+		<!------------------------
+		FIRST ROW
+		------------------------->
+		<tr>
+		<td valign="top" align=left>
+			<img src="icon-dol.jpg" align="top" width="45" border="0" alt="Department of Labor" title="Department of Labor">
+			<img src="icon-ofccp.jpg" align="top" width="155" border="0" alt="Office of Federal Contract Compliance Programs" title="Office of Federal Contract Compliance Programs">
+		</td>
+		<td valign="top" align=right>
+			<h2>
+			Complaint Involving Employment Discrimination by a
+			<br>Federal Contractor or Subcontractor</h2>
+			<h1>
+			<br>
+<a href="http://www.conceptlabs.com/viateq/demo/english_form_instructions.html" target="_blank" >Please read the instructions before completing this form.</a><br>
+
+			</h1>
+		</td>
+		</tr>
+		<tr>
+		<td align=left>
+			<h1>OMB: 1250-0002<br>Expires: XXXX</h1>
+		</td>
+		<td align=right>
+			<h1>
+			<button onclick="validateForm()">Submit</button>
+			<button onclick="clear_form()">Reset Form</button>
+			<button onclick="print_form()">Print Form</button>
+			</h1>
+		</td>
+		</tr>
+		</tbody>
+	</table>
+
+<form name="myform" action="http://www.conceptlabs.com/viateq/demo/viateq.asp" method="POST">
+ 	<!------------------------
+	FORM
+	------------------------->
+	<table width="800px" border="1" cellspacing="0" cellpadding="10" align="center" cols=2>
+
+	<tbody>
+	<!------------------------
+	FIRST ROW
+	------------------------->
+	<tr>
+
+	<td width="20%" align=left>
+		<h1>
+		<b>How can we<br>reach you?</b>
+		</h1>
+	</td>
+
+	<td align=left>
+
+		<h1>
+		Name (First, Middle, Last): 
+		<input size= "50" type="text" name="Fullname1">
+		<br> 
+
+		Street Address: 
+		<input size= "50" type="text" name="Address1">
+		<br> 
+
+		City: 
+		<input bgcolor="#3CBC8D" size= "30" type="text" name="City1"> 
+		
+		State: 
+		<select name="state1" size="1">
+			<option value="">Select a state....</option>
+			<option value="AL">Alabama</option>
+			<option value="AK">Alaska</option>
+			<option value="AZ">Arizona</option>
+			<option value="AR">Arkansas</option>
+			<option value="CA">California</option>
+			<option value="CO">Colorado</option>
+			<option value="CT">Connecticut</option>
+			<option value="DE">Delaware</option>
+			<option value="DC">District Of Columbia</option>
+			<option value="FL">Florida</option>
+			<option value="GA">Georgia</option>
+			<option value="HI">Hawaii</option>
+			<option value="ID">Idaho</option>
+			<option value="IL">Illinois</option>
+			<option value="IN">Indiana</option>
+			<option value="IA">Iowa</option>
+			<option value="KS">Kansas</option>
+			<option value="KY">Kentucky</option>
+			<option value="LA">Louisiana</option>
+			<option value="ME">Maine</option>
+			<option value="MD">Maryland</option>
+			<option value="MA">Massachusetts</option>
+			<option value="MI">Michigan</option>
+			<option value="MN">Minnesota</option>
+			<option value="MS">Mississippi</option>
+			<option value="MO">Missouri</option>
+			<option value="MT">Montana</option>
+			<option value="NE">Nebraska</option>
+			<option value="NV">Nevada</option>
+			<option value="NH">New Hampshire</option>
+			<option value="NJ">New Jersey</option>
+			<option value="NM">New Mexico</option>
+			<option value="NY">New York</option>
+			<option value="NC">North Carolina</option>
+			<option value="ND">North Dakota</option>
+			<option value="OH">Ohio</option>
+			<option value="OK">Oklahoma</option>
+			<option value="OR">Oregon</option>
+			<option value="PA">Pennsylvania</option>
+			<option value="RI">Rhode Island</option>
+			<option value="SC">South Carolina</option>
+			<option value="SD">South Dakota</option>
+			<option value="TN">Tennessee</option>
+			<option value="TX">Texas</option>
+			<option value="UT">Utah</option>
+			<option value="VT">Vermont</option>
+			<option value="VA">Virginia</option>
+			<option value="WA">Washington</option>
+			<option value="WV">West Virginia</option>
+			<option value="WI">Wisconsin</option>
+			<option value="WY">Wyoming</option>
+			<option value="GU">Guam</option>
+			<option value="PR">Puerto Rico</option>
+			<option value="VI">Virgin Islands</option>
+		</select>	
+
+		Zip Code: 
+		<input size= "10" type="text" name="Zipcode1">
+		<br> 
+
+		Telephone Number: 
+		<input size= "12" type="text" name="Telephone1"> 
+		<input type="radio" value="1" name="Telephone_type1" checked>Home
+		<input type="radio" value="2" name="Telephone_type1">Work 
+		<input type="radio" value="3" name="Telephone_type1">Cell
+		<br> 
+
+		Email: 
+		<input size= "40" type="text" name="Email1">
+		<br>
+		<br>
+		Have you filed these allegations of employment discrimination with another 						federal or local agency? <br>
+
+		<input type="radio" value="1" id="Allegations1yes" name="Allegations1">Yes&nbsp;
+		<input checked type="radio" value="2" id="Allegations1no" name="Allegations1" onClick="return a=justclear()">No&nbsp; 
+		<br> 
+		<br>
+		If yes, which agency: 
+		<input size= "40" type="text" name="Agency_Name1" id="Agency_Name1" onMouseout="justclear2()"> 
+		<br>
+
+		Contact Name: 
+		<input size= "23" type="text" name="Agency_POC1" id="Agency_POC1" > 
+
+		Phone Number: 
+		<input size= "12" type="text" name="Agency_Telephone1" id="Agency_Telephone1"> 
+	</h1>
+	</td>
+
+	</tr>
+
+
+
+	<!------------------------
+	SECOND ROW
+	------------------------->
+	<tr>
+	<td align=left>
+		<h1>
+		<b>Who can we<br>contact if we<br>cannot reach<br>you?</b>
+		</h1>
+	</td>
+	<td align=left>
+		<h1>
+		Name (First, Middle, Last): 
+		<input size= "50" type="text" name="Fullname2">
+		<br> 
+
+		Street Address: 
+		<input size= "50" type="text" name="Address2">
+		<br> 
+
+		City: 
+		<input bgcolor="#3CBC8D" size= "30" type="text" name="City2"> 
+		
+
+		State: 
+		<select name="state2" size="1">
+			<option value="">Select a state....</option>
+			<option value="AL">Alabama</option>
+			<option value="AK">Alaska</option>
+			<option value="AZ">Arizona</option>
+			<option value="AR">Arkansas</option>
+			<option value="CA">California</option>
+			<option value="CO">Colorado</option>
+			<option value="CT">Connecticut</option>
+			<option value="DE">Delaware</option>
+			<option value="DC">District Of Columbia</option>
+			<option value="FL">Florida</option>
+			<option value="GA">Georgia</option>
+			<option value="HI">Hawaii</option>
+			<option value="ID">Idaho</option>
+			<option value="IL">Illinois</option>
+			<option value="IN">Indiana</option>
+			<option value="IA">Iowa</option>
+			<option value="KS">Kansas</option>
+			<option value="KY">Kentucky</option>
+			<option value="LA">Louisiana</option>
+			<option value="ME">Maine</option>
+			<option value="MD">Maryland</option>
+			<option value="MA">Massachusetts</option>
+			<option value="MI">Michigan</option>
+			<option value="MN">Minnesota</option>
+			<option value="MS">Mississippi</option>
+			<option value="MO">Missouri</option>
+			<option value="MT">Montana</option>
+			<option value="NE">Nebraska</option>
+			<option value="NV">Nevada</option>
+			<option value="NH">New Hampshire</option>
+			<option value="NJ">New Jersey</option>
+			<option value="NM">New Mexico</option>
+			<option value="NY">New York</option>
+			<option value="NC">North Carolina</option>
+			<option value="ND">North Dakota</option>
+			<option value="OH">Ohio</option>
+			<option value="OK">Oklahoma</option>
+			<option value="OR">Oregon</option>
+			<option value="PA">Pennsylvania</option>
+			<option value="RI">Rhode Island</option>
+			<option value="SC">South Carolina</option>
+			<option value="SD">South Dakota</option>
+			<option value="TN">Tennessee</option>
+			<option value="TX">Texas</option>
+			<option value="UT">Utah</option>
+			<option value="VT">Vermont</option>
+			<option value="VA">Virginia</option>
+			<option value="WA">Washington</option>
+			<option value="WV">West Virginia</option>
+			<option value="WI">Wisconsin</option>
+			<option value="WY">Wyoming</option>
+			<option value="GU">Guam</option>
+			<option value="PR">Puerto Rico</option>
+			<option value="VI">Virgin Islands</option>
+		</select>	
+
+		Zip Code: 
+		<input size= "10" type="text" name="Zipcode2"><br> 
+
+		Telephone Number: 
+		<input size= "10" type="text" name="Telephone2"> 
+		<input type="radio" value="1" name="Telephone_type2">Home
+		<input type="radio" value="2" name="Telephone_type2" checked>Work 
+		<input type="radio" value="3" name="Telephone_type2">Cell
+		<br> 
+
+		Email: 
+		<input size= "40" type="text" name="Email2">
+
+		</h1>
+	</td>
+
+	</tr>
+
+
+	<!------------------------
+	Third ROW
+	------------------------->
+	<tr>
+	<td align=left>
+		<h1>
+		<b>What is the name<br>of the employer<br>that you believe<br>discriminated or<br>			retaliated against<br>you?</b>
+		</h1>
+	</td>
+
+	<td align=left>	
+		<h1>
+		Company Name: 
+		<input size= "50" type="text" name="Fullname3">
+		<br> 
+		
+		Street Address: 
+		<input size= "50" type="text" name="Address3">
+		<br> 
+
+		City: 
+		<input size= "30" type="text" name="City3"> 
+
+		State: 
+		<select name="state3" size="1">
+			<option value="">Select a state....</option>
+			<option value="AL">Alabama</option>
+			<option value="AK">Alaska</option>
+			<option value="AZ">Arizona</option>
+			<option value="AR">Arkansas</option>
+			<option value="CA">California</option>
+			<option value="CO">Colorado</option>
+			<option value="CT">Connecticut</option>
+			<option value="DE">Delaware</option>
+			<option value="DC">District Of Columbia</option>
+			<option value="FL">Florida</option>
+			<option value="GA">Georgia</option>
+			<option value="HI">Hawaii</option>
+			<option value="ID">Idaho</option>
+			<option value="IL">Illinois</option>
+			<option value="IN">Indiana</option>
+			<option value="IA">Iowa</option>
+			<option value="KS">Kansas</option>
+			<option value="KY">Kentucky</option>
+			<option value="LA">Louisiana</option>
+			<option value="ME">Maine</option>
+			<option value="MD">Maryland</option>
+			<option value="MA">Massachusetts</option>
+			<option value="MI">Michigan</option>
+			<option value="MN">Minnesota</option>
+			<option value="MS">Mississippi</option>
+			<option value="MO">Missouri</option>
+			<option value="MT">Montana</option>
+			<option value="NE">Nebraska</option>
+			<option value="NV">Nevada</option>
+			<option value="NH">New Hampshire</option>
+			<option value="NJ">New Jersey</option>
+			<option value="NM">New Mexico</option>
+			<option value="NY">New York</option>
+			<option value="NC">North Carolina</option>
+			<option value="ND">North Dakota</option>	
+			<option value="OH">Ohio</option>
+			<option value="OK">Oklahoma</option>
+			<option value="OR">Oregon</option>
+			<option value="PA">Pennsylvania</option>
+			<option value="RI">Rhode Island</option>
+			<option value="SC">South Carolina</option>
+			<option value="SD">South Dakota</option>
+			<option value="TN">Tennessee</option>
+			<option value="TX">Texas</option>
+			<option value="UT">Utah</option>
+			<option value="VT">Vermont</option>
+			<option value="VA">Virginia</option>
+			<option value="WA">Washington</option>
+			<option value="WV">West Virginia</option>
+			<option value="WI">Wisconsin</option>
+			<option value="WY">Wyoming</option>
+			<option value="GU">Guam</option>
+			<option value="PR">Puerto Rico</option>
+			<option value="VI">Virgin Islands</option>
+		</select>
+	
+		Zip Code: 
+		<input size= "10" type="text" name="Zipcode3" >
+		<br> 
+
+		Telephone Number: 
+		<input size= "12" type="text" name="Telephone3"> 
+
+		<br> 
+		<br> 
+		Give the date(s) and times you believe you were discriminated against: 
+		<textarea rows="3" name="Dis_Date_Time3" cols="70"></textarea>
+
+	</h1>
+	</td>
+
+	</tr>
+
+	<!------------------------
+	Fourth ROW
+	------------------------->
+	<tr>
+	<td align=left>
+	<h1>
+	<b>Why do you<br>believe your<br>employer<br>discriminated or<br>retaliated against<br>you?</b>
+	</h1>
+	</td>
+
+	<td align=left>
+		<h1>
+		<!------------------------
+		FORM
+		------------------------->
+		<table width="100%" border="0" cellspacing="0" cellpadding="0"  align="center" cols=3>
+		<tr>
+		<td valign="top" width="35%">
+			<h1><b>Race</b></h1><h3>
+			<input type="hidden" name="Race41" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>American Indian or Alaska Native
+<br>Indicate Tribal Affiliation</b><br><br>
+<input size= "10" type="text" name="Race4_Tribal_Affiliation4"><br>
+ 			<br>
+
+			<input type="hidden" name="Race42" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Asian</b><br>
+			<input type="hidden" name="Race43" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Black or African American</b><br>
+			<input type="hidden" name="Race44" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Native Hawaiian or Other Pacific Islander</b><br>
+			<input type="hidden" name="Race45" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>White</b><br>
+
+			</h3> 
+		</td>
+
+		<td valign="top" width="20%">
+			<h1>
+			<b>National Origin</b>
+			</h1>
+			<h3>
+			<input type="radio" value="1" name="National_Origin4"><b>Hispanic or Latino</b><br> 
+			<input type="radio" value="2" name="National_Origin4"><b>Other</b> 
+			<br> 
+			<br>
+			</h3>
+			
+			<h1>
+			<input type="hidden" name="Color4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Color</b><br><br>
+			
+			<input type="hidden" name="Religion4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Religion</b><br><br>
+
+			<input type="hidden" name="Sex4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Sex</b><br><br>
+
+			<br> 
+			</h1>
+		</td>
+
+		<td valign="top" width="30%">
+			<h1>
+			<input type="hidden" name="Sexual_Orientation4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Sexual Orientation</b><br><br>
+
+			<input type="hidden" name="Gender_Identity4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Gender Identity</b><br><br>
+
+			<input type="hidden" name="Inquiring_About_Pay4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Inquiring About Pay</b><br><br>
+
+			<input type="hidden" name="Discussing_Pay4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Discussing Pay</b><br><br>
+
+			<input type="hidden" name="Disclosing_Pay4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Disclosing Pay</b><br><br>
+			</h1> 
+		</td>
+
+		<td valign="top" width="25%">
+			<h1>
+			<input type="hidden" name="Protected_Veteran_Status4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Protected Veteran Status</b><br><br>
+
+			<input type="hidden" name="Disability4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Disability</b><br><br>
+
+			<input type="hidden" name="Retaliation4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Retaliation</b><br><br>
+			</h1> 
+		</td>
+
+
+		</tr>
+		</table>
+	</h1>
+	</td>
+	</tr>
+	<!------------------------
+	Fifth ROW
+	------------------------->
+	<tr>
+	<th align = "left" colspan=3>
+		<h1>
+		<b>Where did you learn you could file a complaint with OFCCP?</b>
+		<br>
+
+		<input type="radio" value="Internet" name="Complaint5" checked>Internet 
+		<input type="radio" value="Poster" name="Complaint5">Poster 
+		<input type="radio" value="Community Organization" name="Complaint5">Community Organization 
+		<input type="radio" value="OFCCP Meeting/Event" name="Complaint5">OFCCP Meeting/Event 
+		<input type="radio" value="Brochure" name="Complaint5">Brochure 
+		<input type="radio" value="Other" name="Complaint5">Other 
+		<br>
+		</h1>
+	</th>
+	</tr>
+
+
+
+	</tbody>
+	</table>
+
+<p><!-- pagebreak --></p>
+
+
+
+	<!------------------------
+	FORM
+	------------------------->
+	<table width="800px" border="1" cellspacing="0" cellpadding="10" align="center" cols=2>
+	<tbody>
+
+	<!------------------------
+	FIRST ROW
+	------------------------->
+	<tr>
+	<th align = "left" colspan=2>
+		<h1>
+		<b>Your Complaint:</b>
+		<br>
+		<b>Please describe below what you think the employer did or didn’t do that you believe caused 		discrimination or retaliation, including:</b>
+
+		<ul>
+		<li>What actions the employer took against you?</li>
+		<li>Why you believe those actions were based on your: race; color; religion; sex; sexual orientation; gender identity; 		national origin; disability; veteran status; and/or inquiries 		about, discussions, or disclosures of your pay or the pay of others; and/or in retaliation for 		filing a complaint, participating in discrimination proceedings, opposing unlawful 		discrimination, or exercising any other rights protected by OFCCP?</li>
+		<li>When the employer actions happened, where they happened, and who was involved?</li>
+		<li>What harm, if any, you or others suffered because of the alleged discrimination or 		retaliation?</li>
+		<li>What explanation, if any, your employer or people representing your employer offered for 		their actions?</li>
+		<li>Who was in the same or similar situation as you and how they were treated? Include 		information such as the race, color, religion, sex, sexual orientation, gender identity, 		national origin, disability, or protected status of these individuals, if known?</li>
+		<li>What information you have about federal contracts the company that you worked for had at 		the time of the discrimination or retaliation you describe in this complaint?</li>
+		</ul>
+
+<div align="right">
+		Please attach additional pages, if needed.
+		<br>
+		<textarea rows="10" name="Narrative5" cols="80"></textarea>
+</div>
+		</h1>
+	</th>
+	</tr>
+	
+	<!------------------------
+	SECOND ROW
+	------------------------->
+	<tr>
+ 	
+	<td width="20%" align=left>
+		<h1>
+		<b>Do you think the<br>discrimination<br>includes or affects<br>others?</b>
+		</h1>
+	</td>
+
+	<td align=left>
+		<h1>
+		Do you believe other employees or applicants were treated the same way as you described above?
+		<br>
+		<input type="radio" value="Yes" name="Treated5">Yes 
+		<input type="radio" value="No" name="Treated5" checked>No 
+		<br>
+		<br>
+		If so, please explain, using additional pages if necessary.  
+		<br>
+		<textarea rows="10" name="Narrative6" cols="80"></textarea>
+		</h1>
+
+
+	</td>
+	</tr>
+
+
+
+	<!------------------------
+	THIRD ROW
+	------------------------->
+	<tr>
+ 	
+	<td align=left>
+		<h1>
+		<b>Do you have an<br>attorney or other<br>representative?</b>
+		</h1>
+	</td>
+
+	<td align=left>
+		<h1>
+		If you are represented by an attorney, or another person, or an organization, please provide their contact information below.
+		<br>
+<h1>
+		Name (First, Middle, Last): 
+		<input size= "50" type="text" name="Fullname21">
+		<br> 
+
+		Street Address: 
+		<input size= "50" type="text" name="Address21">
+		<br> 
+
+		City: 
+		<input bgcolor="#3CBC8D" size= "30" type="text" name="City21"> 
+		
+		State: 
+		<select name="state21" size="1">
+			<option value="">Select a state....</option>
+			<option value="AL">Alabama</option>
+			<option value="AK">Alaska</option>
+			<option value="AZ">Arizona</option>
+			<option value="AR">Arkansas</option>
+			<option value="CA">California</option>
+			<option value="CO">Colorado</option>
+			<option value="CT">Connecticut</option>
+			<option value="DE">Delaware</option>
+			<option value="DC">District Of Columbia</option>
+			<option value="FL">Florida</option>
+			<option value="GA">Georgia</option>
+			<option value="HI">Hawaii</option>
+			<option value="ID">Idaho</option>
+			<option value="IL">Illinois</option>
+			<option value="IN">Indiana</option>
+			<option value="IA">Iowa</option>
+			<option value="KS">Kansas</option>
+			<option value="KY">Kentucky</option>
+			<option value="LA">Louisiana</option>
+			<option value="ME">Maine</option>
+			<option value="MD">Maryland</option>
+			<option value="MA">Massachusetts</option>
+			<option value="MI">Michigan</option>
+			<option value="MN">Minnesota</option>
+			<option value="MS">Mississippi</option>
+			<option value="MO">Missouri</option>
+			<option value="MT">Montana</option>
+			<option value="NE">Nebraska</option>
+			<option value="NV">Nevada</option>
+			<option value="NH">New Hampshire</option>
+			<option value="NJ">New Jersey</option>
+			<option value="NM">New Mexico</option>
+			<option value="NY">New York</option>
+			<option value="NC">North Carolina</option>
+			<option value="ND">North Dakota</option>
+			<option value="OH">Ohio</option>
+			<option value="OK">Oklahoma</option>
+			<option value="OR">Oregon</option>
+			<option value="PA">Pennsylvania</option>
+			<option value="RI">Rhode Island</option>
+			<option value="SC">South Carolina</option>
+			<option value="SD">South Dakota</option>
+			<option value="TN">Tennessee</option>
+			<option value="TX">Texas</option>
+			<option value="UT">Utah</option>
+			<option value="VT">Vermont</option>
+			<option value="VA">Virginia</option>
+			<option value="WA">Washington</option>
+			<option value="WV">West Virginia</option>
+			<option value="WI">Wisconsin</option>
+			<option value="WY">Wyoming</option>
+			<option value="GU">Guam</option>
+			<option value="PR">Puerto Rico</option>
+			<option value="VI">Virgin Islands</option>
+		</select>	
+
+		Zip Code: 
+		<input size= "10" type="text" name="Zipcode21">
+		<br> 
+
+		Telephone Number: 
+		<input size= "12" type="text" name="Telephone21"> 
+		Email: 
+		<input size= "40" type="text" name="Email21">
+		<br> 
+		<br>
+		Who should we contact if we need more information about your description of what occurred?
+		<br>
+		<input type="radio" value="Myself" name="Attorney5" checked>You 
+		<input type="radio" value="Representative" name="Attorney5">Your Representative 
+		<br>
+		</h1>
+	</td>
+	</tr>
+
+
+	<!------------------------
+	SECOND ROW
+	------------------------->
+	<tr>
+ 	
+	<td align=left>
+		<h1>
+		<b>Signature and<br>Verification</b>
+		</h1>
+	</td>
+
+	<td align=left>
+		<h1>
+		I declare under penalty of perjury that the information given above is true 		and correct to the best of my knowledge or belief. A willful false 		statement is punishable by law.
+		<br>
+		<br>
+		I hereby authorize the release of any medical information needed for this 		investigation.
+		<br>
+		<br>
+		Signature of Complainant:
+		<textarea rows="1" name="Print_Signature" cols="20"></textarea>
+
+
+Date: <input type="Text" id="demo1" maxlength="25" size="25" name="Print_Signature_Date">
+<a href="javascript:NewCal('demo1','ddmmmyyyy',true,24)">
+<img src="http://www.conceptlabs.com/viateq/demo/cal.gif" width="16" height="16" border="0" alt="Pick a date">
+</a>
+
+
+		</h1>
+	</td>
+	</tr>
+
+
+	</tbody>
+	</table>
+</form>
+
+</div>
+
+<div align="right">
+	<h1>
+	Form CC-4 (revised 01/20XX)
+	</h1>
+</div>
+</td>
+</tr>
+
+</table>
+
+
+</body>
+</html>
