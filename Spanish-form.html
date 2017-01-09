@@ -3,7 +3,7 @@
 COMPANY: VIATEQ CORPORATION
 AUTHOR: Dennis Dunston
 DATE: October 2016
-DESCRIPTION: Form translation.
+DESCRIPTION: Form translation for Spanish.
 -------------------------------------------------------->
 <HEAD>
 <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
@@ -48,27 +48,6 @@ h3 {
 	font-weight: 500;
 	line-height: 11px;
 }
-
-.table_font {
-    	color: black;
-    	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-    	font-size: 12px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-	line-height: 11px;
-}
-
-.table_font_title {
-    	color: black;
-    	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-    	font-size: 14px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-	line-height: 15px;
-}
-
 input {
     border: 0;
     outline: 0;
@@ -82,11 +61,10 @@ textarea {
     background: #F0F8FF;
     border-bottom: 1px solid black;
 }
-
 </style>
 </HEAD>
 
-<TITLE>Form Translation</TITLE>
+<TITLE>Form Translation for Spanish</TITLE>
 
 <body>
 <!-------------------------------------------------------
@@ -120,7 +98,7 @@ function print_form() {
 }
 
 function instructions() {
-    var myWindow = window.open("http://www.conceptlabs.com/viateq/demo/english_form_instructions.html","_blank", "height=900, width=650, status=yes, toolbar=no, menubar=no, location=no");
+    var myWindow = window.open("http://www.conceptlabs.com/viateq/demo/spanish_form_instructions.html","_blank", "height=900, width=650, status=yes, toolbar=no, menubar=no, location=no");
 
 
 }
@@ -166,22 +144,22 @@ Outer Table
 		</td>
 		<td valign="top" align=right>
 			<h2>
-			Complaint Involving Employment Discrimination by a
-			<br>Federal Contractor or Subcontractor</h2>
+			Queja de Discriminación de Empleo por 
+			<br>un Contratista o Subcontratista Federal</h2>
 			<h1>
 			<br>
-<a href="http://www.conceptlabs.com/viateq/demo/english_form_instructions.html" target="_blank" >Please read the instructions before completing this form.</a><br>
+<a href="http://www.conceptlabs.com/viateq/demo/spanish_form_instructions.html" target="_blank" >Por favor lea las instrucciones antes de completar este formulario.</a><br>
 
 			</h1>
 		</td>
 		</tr>
 		<tr>
 		<td align=left>
-			<h1>OMB: 1250-0002<br>Expires: XXXX</h1>
+			<h1>OMB: 1250-0002<br>Expira: XXXX</h1>
 		</td>
 		<td align=right>
 			<h1>
-			<button onclick="validateForm()">Submit</button>
+			<button onclick="validateForm()">Someter</button>
 			<button onclick="clear_form()">Reset Form</button>
 			<button onclick="print_form()">Print Form</button>
 			</h1>
@@ -204,27 +182,26 @@ Outer Table
 
 	<td width="20%" align=left>
 		<h1>
-		<b>How can we<br>reach you?</b>
+		<b>¿Cómo podemos <br>contactarte?</b>
 		</h1>
 	</td>
 
 	<td align=left>
- <input type="hidden" name="Form_Language" value="English">
-		<h1>
-		Name (First, Middle, Last): 
+ <input type="hidden" name="Form_Language" value="Spanish">		<h1>
+		Nombre (Primer, Segundo, Apellido):
 		<input size= "50" type="text" name="Fullname1">
 		<br> 
 
-		Street Address: 
+		Dirección:  
 		<input size= "50" type="text" name="Address1">
 		<br> 
 
-		City: 
-		<input bgcolor="#3CBC8D" size= "30" type="text" name="City1"> 
+		Ciudad: 
+		<input bgcolor="#3CBC8D" size= "20" type="text" name="City1"> 
 		
-		State: 
+		Estado: 
 		<select name="state1" size="1">
-			<option value="">Select a state....</option>
+			<option value="">Selecciona un estado....</option>
 			<option value="AL">Alabama</option>
 			<option value="AK">Alaska</option>
 			<option value="AZ">Arizona</option>
@@ -281,35 +258,35 @@ Outer Table
 			<option value="VI">Virgin Islands</option>
 		</select>	
 
-		Zip Code: 
+		Código Postal: 
 		<input size= "10" type="text" name="Zipcode1">
 		<br> 
 
-		Telephone Number: 
+		Número de Teléfono: 
 		<input size= "12" type="text" name="Telephone1"> 
-		<input type="radio" value="1" name="Telephone_type1" checked>Home
-		<input type="radio" value="2" name="Telephone_type1">Work 
-		<input type="radio" value="3" name="Telephone_type1">Cell
+		<input type="radio" value="1" name="Telephone_type1" checked>Casa
+		<input type="radio" value="2" name="Telephone_type1">Trabajo 
+		<input type="radio" value="3" name="Telephone_type1">Celular
 		<br> 
 
-		Email: 
+		Correo electrónico: 
 		<input size= "40" type="text" name="Email1">
 		<br>
 		<br>
-		Have you filed these allegations of employment discrimination with another federal or local agency? <br>
+		Ha presentado estas denuncias de discriminación en el empleo con otra agencia federal o local?<br>
 
-		<input type="radio" value="1" id="Allegations1yes" name="Allegations1">Yes&nbsp;
+		<input type="radio" value="1" id="Allegations1yes" name="Allegations1">Si&nbsp;
 		<input checked type="radio" value="2" id="Allegations1no" name="Allegations1" onClick="return a=justclear()">No&nbsp; 
 		<br> 
 		<br>
-		If yes, which agency: 
+		En caso afirmativo, que agencia:
 		<input size= "40" type="text" name="Agency_Name1" id="Agency_Name1" onMouseout="justclear2()"> 
 		<br>
 
-		Contact Name: 
+		Nombre de contacto: 
 		<input size= "23" type="text" name="Agency_POC1" id="Agency_POC1" > 
 
-		Phone Number: 
+		Número de Teléfono:  
 		<input size= "12" type="text" name="Agency_Telephone1" id="Agency_Telephone1"> 
 	</h1>
 	</td>
@@ -324,26 +301,26 @@ Outer Table
 	<tr>
 	<td align=left>
 		<h1>
-		<b>Who can we<br>contact if we<br>cannot reach<br>you?</b>
+		<b>¿A quién podemos contactar si no podemos <br>comunicarnos con usted?</b>
 		</h1>
 	</td>
 	<td align=left>
 		<h1>
-		Name (First, Middle, Last): 
+		Nombre (Primer, Segundo, Apellido):  
 		<input size= "50" type="text" name="Fullname2">
 		<br> 
 
-		Street Address: 
+		Dirección:  
 		<input size= "50" type="text" name="Address2">
 		<br> 
 
-		City: 
-		<input bgcolor="#3CBC8D" size= "30" type="text" name="City2"> 
+		Ciudad: 
+		<input bgcolor="#3CBC8D" size= "20" type="text" name="City2"> 
 		
 
-		State: 
+		Estado: 
 		<select name="state2" size="1">
-			<option value="">Select a state....</option>
+			<option value="">Selecciona un estado....</option>
 			<option value="AL">Alabama</option>
 			<option value="AK">Alaska</option>
 			<option value="AZ">Arizona</option>
@@ -400,17 +377,17 @@ Outer Table
 			<option value="VI">Virgin Islands</option>
 		</select>	
 
-		Zip Code: 
+		Código Postal: 
 		<input size= "10" type="text" name="Zipcode2"><br> 
 
-		Telephone Number: 
+		Número de Teléfono: 
 		<input size= "10" type="text" name="Telephone2"> 
-		<input type="radio" value="1" name="Telephone_type2">Home
-		<input type="radio" value="2" name="Telephone_type2" checked>Work 
-		<input type="radio" value="3" name="Telephone_type2">Cell
+		<input type="radio" value="1" name="Telephone_type2">Casa
+		<input type="radio" value="2" name="Telephone_type2" checked>Trabajo  
+		<input type="radio" value="3" name="Telephone_type2">Celular
 		<br> 
 
-		Email: 
+		Correo electrónico:  
 		<input size= "40" type="text" name="Email2">
 
 		</h1>
@@ -425,26 +402,26 @@ Outer Table
 	<tr>
 	<td align=left>
 		<h1>
-		<b>What is the name<br>of the employer<br>that you believe<br>discriminated or<br>			retaliated against<br>you?</b>
+		<b>¿Cuál es el nombre del empleador que usted cree discrimino o tomo represalias contra usted?</b>
 		</h1>
 	</td>
 
 	<td align=left>	
 		<h1>
-		Company Name: 
+		Empresa Nombre:
 		<input size= "50" type="text" name="Fullname3">
 		<br> 
 		
-		Street Address: 
+		Dirección: 
 		<input size= "50" type="text" name="Address3">
 		<br> 
 
-		City: 
-		<input size= "30" type="text" name="City3"> 
+		Ciudad: 
+		<input size= "20" type="text" name="City3"> 
 
-		State: 
+		Estado: 
 		<select name="state3" size="1">
-			<option value="">Select a state....</option>
+			<option value="">Selecciona un estado....</option>
 			<option value="AL">Alabama</option>
 			<option value="AK">Alaska</option>
 			<option value="AZ">Arizona</option>
@@ -501,16 +478,16 @@ Outer Table
 			<option value="VI">Virgin Islands</option>
 		</select>
 	
-		Zip Code: 
+		Código Postal: 
 		<input size= "10" type="text" name="Zipcode3" >
 		<br> 
 
-		Telephone Number: 
+		Número de Teléfono: 
 		<input size= "12" type="text" name="Telephone3"> 
 
 		<br> 
 		<br> 
-		Give the date(s) and times you believe you were discriminated against: 
+		Indique las fecha(s) y horas en las que cree que fue discriminado o recibido represalias en su contra:
 		<textarea rows="3" name="Dis_Date_Time3" cols="70"></textarea>
 
 	</h1>
@@ -524,7 +501,7 @@ Outer Table
 	<tr>
 	<td align=left>
 	<h1>
-	<b>Why do you<br>believe your<br>employer<br>discriminated or<br>retaliated against<br>you?</b>
+	<b>¿Por qué cree usted que su empleador discriminó o tomó represalias en su contra?</b>
 	</h1>
 	</td>
 
@@ -535,170 +512,64 @@ Outer Table
 		------------------------->
 		<table width="100%" border="0" cellspacing="0" cellpadding="0"  align="center" cols=3>
 		<tr>
-		<td valign="top" width="35%">
-			<h1><b>Race</b></h1>
+		<td valign="top" width="30%">
+			<h1><b>Raza</b></h1><h3>
+			<input type="hidden" name="Race41" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">Indio Americano o Nativo de Alaska
+<br>Indique Afiliación Tribal:<br><br>
+<input size= "10" type="text" name="Race4_Tribal_Affiliation4"><br>
+ 			<br>
 
-			<table border="0" cellspacing="5" cellpadding="0" class="table_font">
-			<tr>
-				<td valign="top">
-					<input type="checkbox" name="Race41" value="1">
-				</td>
-				<td valign="center">
-				
-					American Indian or Alaska Native <br>Indicate Tribal Affiliation
-					<input size= "10" type="text" name="Race4_Tribal_Affiliation4">
-				
-				</td>
-			</tr>
-
-
-			<tr>
-				<td valign="top">
-					<input type="checkbox" name="Race42" value="1">
-				</td>
-				<td valign="center">
-					Asian
-				</td>
-			</tr>
-
-
-			<tr>
-				<td valign="top">
-					<input type="checkbox" name="Race43" value="1">
-				</td>
-				<td valign="center">
-					Black or African American
-				</td>
-			</tr>
-
-			<tr>
-				<td valign="top">
-					<input type="checkbox" name="Race44" value="1">
-				</td>
-				<td valign="center">
-					Native Hawaiian or Other Pacific Islander
-				</td>
-			</tr>
-
-			<tr>
-				<td valign="top">
-					<input type="checkbox" name="Race45" value="1">
-				</td>
-				<td valign="center">
-					White
-				</td>
-			</tr>
-
-			</table>
-
-
+			<input type="hidden" name="Race42" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">Asiática<br>
+			<input type="hidden" name="Race43" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">Negro o afroamericano<br>
+			<input type="hidden" name="Race44" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">Nativo de Hawaii o de otras islas del Pacífico<br>
+			<input type="hidden" name="Race45" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">Blanco<br>
+			</h3> 
+		</td>
 
 		<td valign="top" width="20%">
 			<h1>
-			<b>National Origin</b>
+			<b>Origen Nacional</b>
 			</h1>
-
-
-
-	<table border="0" cellspacing="5" cellpadding="0" class="table_font">
-			<tr>
-				<td valign="top"><input type="radio" value="1" name="National_Origin4"></td>
-				<td valign="center">Hispanic or Latino</td>
-			</tr>
-			<tr>
-				<td valign="top"><input type="radio" value="2" name="National_Origin4"></td>
-				<td valign="center">Other</td>
-			</tr>
-	</table>
-
+			<h3>
+			<input type="radio" value="1" name="National_Origin4">Hispano o Latino<br> 
+			<input type="radio" value="2" name="National_Origin4">Otros 
+			<br> 
+			<br>
+			</h3>
+			
 			<h1>
 			<input type="hidden" name="Color4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Color</b><br><br>
 			
-			<input type="hidden" name="Religion4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Religion</b><br><br>
+			<input type="hidden" name="Religion4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Religión</b><br><br>
 
-			<input type="hidden" name="Sex4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Sex</b><br><br>
+			<input type="hidden" name="Sex4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Sexo</b><br><br>
 
 			<br> 
 			</h1>
-
-
 		</td>
 
 		<td valign="top" width="30%">
+			<h1>
+			<input type="hidden" name="Sexual_Orientation4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Orientación Sexual</b><br><br>
 
-			<table border="0" cellspacing="5" cellpadding="0" class="table_font_title" >
-			<tr>
-				<td valign="top">
-					<input type="hidden" name="Sexual_Orientation4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">
-				</td>
-				<td valign="center">
-					<b>Sexual Orientation</b>	
-				</td>
-			</tr>
-			<tr>
-				<td valign="top">
-					<input type="hidden" name="Gender_Identity4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">
-				</td>
-				<td valign="center">
-					<b>Gender Identity</b>	
-				</td>
-			</tr>
-			<tr>
-				<td valign="top">
-					<input type="hidden" name="Inquiring_About_Pay4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">
-				</td>
-				<td valign="center">
-					<b>Inquiring About Pay</b>	
-				</td>
-			</tr>
-			<tr>
-				<td valign="top">
-					<input type="hidden" name="Discussing_Pay4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">
-				</td>
-				<td valign="center">
-					<b>Discussing Pay</b>	
-				</td>
-			</tr>
-			<tr>
-				<td valign="top">
-					<input type="hidden" name="Disclosing_Pay4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">
-				</td>
-				<td valign="center">
-					<b>Disclosing Pay</b>	
-				</td>
-			</tr>
-			</table>
+			<input type="hidden" name="Gender_Identity4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Identidad de Género</b><br><br>
 
+			<input type="hidden" name="Inquiring_About_Pay4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Preguntando sobre el salario</b><br><br>
+
+			<input type="hidden" name="Discussing_Pay4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Discutir sobre el salario</b><br><br>
+
+			<input type="hidden" name="Disclosing_Pay4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Divulgar el salario</b><br><br>
+			</h1> 
 		</td>
 
-		<td valign="top" width="30%">
-			<table border="0" cellspacing="5" cellpadding="0" class="table_font_title" >
-			<tr>
-				<td valign="top">
-					<input type="hidden" name="Protected_Veteran_Status4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">
-				</td>
-				<td valign="center">
-					<b>Protected Veteran Status</b>	
-				</td>
-			</tr>
-			<tr>
-				<td valign="top">
-					<input type="hidden" name="Disability4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">
-				</td>
-				<td valign="center">
-					<b>Disability</b>	
-				</td>
-			</tr>
-			<tr>
-				<td valign="top">
-					<input type="hidden" name="Retaliation4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">
-				</td>
-				<td valign="center">
-					<b>Retaliation</b>	
-				</td>
-			</tr>
-			</table>
+		<td valign="top" width="25%">
+			<h1>
+			<input type="hidden" name="Protected_Veteran_Status4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Estatus de Veterano Protegido</b><br><br>
 
+			<input type="hidden" name="Disability4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Discapacidad</b><br><br>
+
+			<input type="hidden" name="Retaliation4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Represalia</b><br><br>
+			</h1> 
 		</td>
 
 
@@ -713,15 +584,15 @@ Outer Table
 	<tr>
 	<th align = "left" colspan=3>
 		<h1>
-		<b>Where did you learn you could file a complaint with OFCCP?</b>
+		<b>Dónde aprendió que podría presentar una queja ante la OFCCP?</b>
 		<br>
 
 		<input type="radio" value="Internet" name="Complaint5" checked>Internet 
 		<input type="radio" value="Poster" name="Complaint5">Poster 
-		<input type="radio" value="Community Organization" name="Complaint5">Community Organization 
-		<input type="radio" value="OFCCP Meeting/Event" name="Complaint5">OFCCP Meeting/Event 
-		<input type="radio" value="Brochure" name="Complaint5">Brochure 
-		<input type="radio" value="Other" name="Complaint5">Other 
+		<input type="radio" value="Community Organization" name="Complaint5">Organización de la Comunidad
+		<input type="radio" value="OFCCP Meeting/Event" name="Complaint5">Reunión/Evento OFCCP 
+		<input type="radio" value="Brochure" name="Complaint5">Folleto 
+		<input type="radio" value="Other" name="Complaint5">Otros 
 		<br>
 		</h1>
 	</th>
@@ -748,22 +619,22 @@ Outer Table
 	<tr>
 	<th align = "left" colspan=2>
 		<h1>
-		<b>Your Complaint:</b>
+		<b>Su Queja:</b>
 		<br>
-		<b>Please describe below what you think the employer did or didn’t do that you believe caused 		discrimination or retaliation, including:</b>
+		<b>Por favor describa a continuación lo piensa que el empleador hizo o no hizo que usted cree que causó la discriminación o represalias, incluyendo:</b>
 
 		<ul>
-		<li>What actions the employer took against you.</li>
-		<li>Why you believe those actions were based on your: race; color; religion; sex; sexual orientation; gender identity; 		national origin; disability; veteran status; and/or inquiries 		about, discussions, or disclosures of your pay or the pay of others; and/or in retaliation for 		filing a complaint, participating in discrimination proceedings, opposing unlawful 		discrimination, or exercising any other rights protected by OFCCP.</li>
-		<li>When the employer actions happened, where they happened, and who was involved.</li>
-		<li>What harm, if any, you or others suffered because of the alleged discrimination or 		retaliation.</li>
-		<li>What explanation, if any, your employer or people representing your employer offered for 		their actions.</li>
-		<li>Who was in the same or similar situation as you and how they were treated? Include 		information such as the race, color, religion, sex, sexual orientation, gender identity, 		national origin, disability, or protected status of these individuals, if known.</li>
-		<li>What information you have about federal contracts the company that you worked for had at 		the time of the discrimination or retaliation you describe in this complaint.</li>
+		<li>Qué acciones tomó el empleador contra usted.</li>
+		<li>¿Por qué cree que esas acciones se basaron en su: raza; color; religión; sexo; orientación sexual; identidad de género; origen nacional; discapacidad; estatus de veterano; y/o preguntas sobre, discusiones o divulgaciones de su salario o el salario de otros; y/o represalia por presentar una queja, participar en procedimientos de discriminación, oponerse a la discriminación ilegal, o ejercer cualquier otro derecho protegido por OFCCP?</li>
+		<li>Cuando ocurrieron las acciones del empleador, dónde ocurrieron y quién estuvo involucrado.</li>
+		<li>¿Qué daño, si alguno, usted o otros sufrieron debido a la supuesta discriminación o represalia?</li>
+		<li>¿Qué explicación, si la hay, su empleador o las personas que representan a su empleador, ofrecieron por sus acciones?</li>
+		<li>¿Quién estuvo en la misma situación o similar que usted y cómo fueron tratados? Incluya información, tales como la raza, color, religión, sexo, orientación sexual, identidad de género, origen nacional, discapacidad o estatus protegido de estas personas, si se conocen.</li>
+		<li>Qué información usted tiene sobre contratos federales que tenía la empresa para la que trabajó en el momento de la discriminación o represalia que describe en esta queja.</li>
 		</ul>
 
 <div align="left">
-		<b>Please attach additional pages, if needed.</b>
+		<b>Por favor adjunte páginas adicionales, si es necesario.</b>
 		<br>
 		<textarea rows="10" name="Narrative5" cols="80"></textarea>
 </div>
@@ -778,19 +649,19 @@ Outer Table
  	
 	<td width="20%" align=left>
 		<h1>
-		<b>Do you think the<br>discrimination<br>includes or affects<br>others?</b>
+		<b>¿Cree que la discriminación incluye o afecta a otros?</b>
 		</h1>
 	</td>
 
 	<td align=left>
 		<h1>
-		Do you believe other employees or applicants were treated the same way as you described above?
+		¿Cree usted que a otros empleados o solicitantes fueron tratados de la misma manera como usted describió anteriormente?
 		<br>
-		<input type="radio" value="Yes" name="Treated5">Yes 
+		<input type="radio" value="Yes" name="Treated5">Si 
 		<input type="radio" value="No" name="Treated5" checked>No 
 		<br>
 		<br>
-		<b>If so, please explain, using additional pages if necessary. </b>
+		<b>Si es así, por favor explique, usando páginas adicionales si es necesario. </b>
 		<br>
 		<textarea rows="10" name="Narrative6" cols="80"></textarea>
 		</h1>
@@ -808,29 +679,29 @@ Outer Table
  	
 	<td align=left>
 		<h1>
-		<b>Do you have an<br>attorney or other<br>representative?</b>
+		<b>¿Tiene usted un abogado u otro representante?</b>
 		</h1>
 	</td>
 
 	<td align=left>
 		<h1>
-		If you are represented by an attorney, or another person, or an organization, please provide their contact information below.
+		Si usted está representado por un abogado, u otra persona, o una organización, por favor proporcione su información de contacto más abajo.
 		<br>
 <h1>
-		Name (First, Middle, Last): 
+		Nombre (Primero, Segundo, Apellido):  
 		<input size= "50" type="text" name="Fullname21">
 		<br> 
 
-		Street Address: 
+		Dirección:
 		<input size= "50" type="text" name="Address21">
 		<br> 
 
-		City: 
-		<input bgcolor="#3CBC8D" size= "30" type="text" name="City21"> 
+		Ciudad: 
+		<input bgcolor="#3CBC8D" size= "20" type="text" name="City21"> 
 		
-		State: 
+		Estado: 
 		<select name="state21" size="1">
-			<option value="">Select a state....</option>
+			<option value="">Selecciona un estado....</option>
 			<option value="AL">Alabama</option>
 			<option value="AK">Alaska</option>
 			<option value="AZ">Arizona</option>
@@ -887,20 +758,21 @@ Outer Table
 			<option value="VI">Virgin Islands</option>
 		</select>	
 
-		Zip Code: 
+		Código Postal: 
 		<input size= "10" type="text" name="Zipcode21">
 		<br> 
 
-		Telephone Number: 
+		Número de Teléfono: 
 		<input size= "12" type="text" name="Telephone21"> 
-		Email: 
+
+		Correo electrónico:  
 		<input size= "40" type="text" name="Email21">
 		<br> 
 		<br>
-		Who should we contact if we need more information about your description of what occurred?
+		¿A quién debemos contactar si necesitamos más información acerca de su descripción de lo ocurrido?
 		<br>
-		<input type="radio" value="Myself" name="Attorney5" checked>You 
-		<input type="radio" value="Representative" name="Attorney5">Your Representative 
+		<input type="radio" value="Myself" name="Attorney5" checked>Usted 
+		<input type="radio" value="Representative" name="Attorney5">Su Representante 
 		<br>
 		</h1>
 	</td>
@@ -914,22 +786,22 @@ Outer Table
  	
 	<td align=left>
 		<h1>
-		<b>Signature and<br>Verification</b>
+		<b>Firma y <br>Verificación</b>
 		</h1>
 	</td>
 
 	<td align=left>
 		<h1>
-		I declare under penalty of perjury that the information given above is true 		and correct to the best of my knowledge or belief. A willful false 		statement is punishable by law.
+		Declaro bajo pena de perjurio que la información proporcionada es verdadera y correcta a lo mejor de mi conocimiento o creencia. Una declaración falsa intencional es castigada por la ley.
 		<br>
 		<br>
-		I hereby authorize the release of any medical information needed for this 		investigation.
+Por la presente autorizo la divulgación de cualquier información médica necesaria para esta investigación.
 		<br>
 		<br>
-		Signature of Complainant:
+		Firma del Querellante:
 		<textarea rows="1" name="Print_Signature" cols="20"></textarea>
 
-		Date: <input type="text" name="Print_Signature_Date" id="todays_date"> 
+		Fecha: <input type="text" name="Print_Signature_Date" id="todays_date"> 
 		<script type="text/javascript"> 
 			var d = new Date();
 			var n 	= d.getMonth()+1+"/"+d.getDate()+"/"+d.getFullYear();
@@ -948,16 +820,10 @@ Outer Table
 
 <div align="right">
 		<h1>
-		<button onclick="validateForm()">Submit</button>
+		<button onclick="validateForm()">Someter</button>
 		</h1>
 	<h1>
-	Form CC-4 (revised 01/20XX)
-
-
-
-
-
-
+	Formulario CC-4 (revisado 01/20XX)
 	</h1>
 </div>
 </td>

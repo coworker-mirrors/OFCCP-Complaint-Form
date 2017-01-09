@@ -3,7 +3,7 @@
 COMPANY: VIATEQ CORPORATION
 AUTHOR: Dennis Dunston
 DATE: October 2016
-DESCRIPTION: Form translation.
+DESCRIPTION: Form translation for Creole.
 -------------------------------------------------------->
 <HEAD>
 <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
@@ -48,27 +48,6 @@ h3 {
 	font-weight: 500;
 	line-height: 11px;
 }
-
-.table_font {
-    	color: black;
-    	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-    	font-size: 12px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-	line-height: 11px;
-}
-
-.table_font_title {
-    	color: black;
-    	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-    	font-size: 14px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-	line-height: 15px;
-}
-
 input {
     border: 0;
     outline: 0;
@@ -82,11 +61,10 @@ textarea {
     background: #F0F8FF;
     border-bottom: 1px solid black;
 }
-
 </style>
 </HEAD>
 
-<TITLE>Form Translation</TITLE>
+<TITLE>Form Translation for Haitian Creole</TITLE>
 
 <body>
 <!-------------------------------------------------------
@@ -120,7 +98,7 @@ function print_form() {
 }
 
 function instructions() {
-    var myWindow = window.open("http://www.conceptlabs.com/viateq/demo/english_form_instructions.html","_blank", "height=900, width=650, status=yes, toolbar=no, menubar=no, location=no");
+    var myWindow = window.open("http://www.conceptlabs.com/viateq/demo/creole_form_instructions.html","_blank", "height=900, width=650, status=yes, toolbar=no, menubar=no, location=no");
 
 
 }
@@ -166,24 +144,23 @@ Outer Table
 		</td>
 		<td valign="top" align=right>
 			<h2>
-			Complaint Involving Employment Discrimination by a
-			<br>Federal Contractor or Subcontractor</h2>
+Plent ki Konsène Pratik Diskriminasyon yon Kontraktè oswa Sou-Kontraktè Gouvènman Federal nan Travay</h2>
 			<h1>
 			<br>
-<a href="http://www.conceptlabs.com/viateq/demo/english_form_instructions.html" target="_blank" >Please read the instructions before completing this form.</a><br>
+<a href="http://www.conceptlabs.com/viateq/demo/creole_form_instructions.html" target="_blank" >Tanpri li enstriksyon yo epi ranpli fòm sa a.</a><br>
 
 			</h1>
 		</td>
 		</tr>
 		<tr>
 		<td align=left>
-			<h1>OMB: 1250-0002<br>Expires: XXXX</h1>
+			<h1>OMB: 1250-0002<br>Ekspire: XXXX</h1>
 		</td>
 		<td align=right>
 			<h1>
-			<button onclick="validateForm()">Submit</button>
-			<button onclick="clear_form()">Reset Form</button>
-			<button onclick="print_form()">Print Form</button>
+			<button onclick="validateForm()">Soumèt</button>
+			<button onclick="clear_form()">Re-Inisyalize</button>
+			<button onclick="print_form()">Enprime</button>
 			</h1>
 		</td>
 		</tr>
@@ -204,27 +181,26 @@ Outer Table
 
 	<td width="20%" align=left>
 		<h1>
-		<b>How can we<br>reach you?</b>
+		<b>Kijan nou kapab kontakte ou?</b>
 		</h1>
 	</td>
 
 	<td align=left>
- <input type="hidden" name="Form_Language" value="English">
-		<h1>
-		Name (First, Middle, Last): 
+ <input type="hidden" name="Form_Language" value="Creole">		<h1>
+		Non (Prenon, Dezyèm Prenon, Non Fanmi): 
 		<input size= "50" type="text" name="Fullname1">
 		<br> 
 
-		Street Address: 
+		Nimewo Kay:  
 		<input size= "50" type="text" name="Address1">
 		<br> 
 
-		City: 
-		<input bgcolor="#3CBC8D" size= "30" type="text" name="City1"> 
+		Vil:  
+		<input bgcolor="#3CBC8D" size= "20" type="text" name="City1"> 
 		
-		State: 
+		Eta:  
 		<select name="state1" size="1">
-			<option value="">Select a state....</option>
+			<option value="">Estados...</option>
 			<option value="AL">Alabama</option>
 			<option value="AK">Alaska</option>
 			<option value="AZ">Arizona</option>
@@ -280,36 +256,35 @@ Outer Table
 			<option value="PR">Puerto Rico</option>
 			<option value="VI">Virgin Islands</option>
 		</select>	
-
-		Zip Code: 
+		Kòd Postal: 
 		<input size= "10" type="text" name="Zipcode1">
 		<br> 
 
-		Telephone Number: 
+		Nimewo Telefòn:  
 		<input size= "12" type="text" name="Telephone1"> 
-		<input type="radio" value="1" name="Telephone_type1" checked>Home
-		<input type="radio" value="2" name="Telephone_type1">Work 
-		<input type="radio" value="3" name="Telephone_type1">Cell
+		<input type="radio" value="1" name="Telephone_type1" checked>Lakay 
+		<input type="radio" value="2" name="Telephone_type1">Travay 
+		<input type="radio" value="3" name="Telephone_type1">Selilè
 		<br> 
 
-		Email: 
+		Adrès Imèl:  
 		<input size= "40" type="text" name="Email1">
 		<br>
 		<br>
-		Have you filed these allegations of employment discrimination with another federal or local agency? <br>
+		Èske ou te depoze akizasyon pou diskriminasyon nan travay ba yon lòt ajans federal oswa lokal?<br>
 
-		<input type="radio" value="1" id="Allegations1yes" name="Allegations1">Yes&nbsp;
-		<input checked type="radio" value="2" id="Allegations1no" name="Allegations1" onClick="return a=justclear()">No&nbsp; 
+		<input type="radio" value="1" id="Allegations1yes" name="Allegations1">Wi&nbsp;
+		<input checked type="radio" value="2" id="Allegations1no" name="Allegations1" onClick="return a=justclear()">Non&nbsp; 
 		<br> 
 		<br>
-		If yes, which agency: 
+		Si ou reponn wi, ki ajans: 
 		<input size= "40" type="text" name="Agency_Name1" id="Agency_Name1" onMouseout="justclear2()"> 
 		<br>
 
-		Contact Name: 
+		Non pou kontakte:  
 		<input size= "23" type="text" name="Agency_POC1" id="Agency_POC1" > 
 
-		Phone Number: 
+		Nimewo Telefòn:  
 		<input size= "12" type="text" name="Agency_Telephone1" id="Agency_Telephone1"> 
 	</h1>
 	</td>
@@ -324,26 +299,26 @@ Outer Table
 	<tr>
 	<td align=left>
 		<h1>
-		<b>Who can we<br>contact if we<br>cannot reach<br>you?</b>
+		<b>Kimoun nou kapab kontakte si nou pa kapab jwenn ou?</b>
 		</h1>
 	</td>
 	<td align=left>
 		<h1>
-		Name (First, Middle, Last): 
+		Non (Prenon, Dezyèm Prenon, Non Fanmi):  
 		<input size= "50" type="text" name="Fullname2">
 		<br> 
 
-		Street Address: 
+		Nimewo Kay:   
 		<input size= "50" type="text" name="Address2">
 		<br> 
 
-		City: 
-		<input bgcolor="#3CBC8D" size= "30" type="text" name="City2"> 
+		Vil: 
+		<input bgcolor="#3CBC8D" size= "20" type="text" name="City2"> 
 		
 
-		State: 
+		Eta: 
 		<select name="state2" size="1">
-			<option value="">Select a state....</option>
+			<option value="">Chwazi yon eta...</option>
 			<option value="AL">Alabama</option>
 			<option value="AK">Alaska</option>
 			<option value="AZ">Arizona</option>
@@ -400,17 +375,17 @@ Outer Table
 			<option value="VI">Virgin Islands</option>
 		</select>	
 
-		Zip Code: 
+		Kòd Postal: 
 		<input size= "10" type="text" name="Zipcode2"><br> 
 
-		Telephone Number: 
+		Nimewo Telefòn: 
 		<input size= "10" type="text" name="Telephone2"> 
-		<input type="radio" value="1" name="Telephone_type2">Home
-		<input type="radio" value="2" name="Telephone_type2" checked>Work 
-		<input type="radio" value="3" name="Telephone_type2">Cell
+		<input type="radio" value="1" name="Telephone_type2">Lakay
+		<input type="radio" value="2" name="Telephone_type2" checked>Travay
+		<input type="radio" value="3" name="Telephone_type2">Selilè
 		<br> 
 
-		Email: 
+		Adrès Imèl:  
 		<input size= "40" type="text" name="Email2">
 
 		</h1>
@@ -425,26 +400,26 @@ Outer Table
 	<tr>
 	<td align=left>
 		<h1>
-		<b>What is the name<br>of the employer<br>that you believe<br>discriminated or<br>			retaliated against<br>you?</b>
+		<b>Ki non patwon ou kwè ki te fè diskriminasyon oswa vanjans kont ou?</b>
 		</h1>
 	</td>
 
 	<td align=left>	
 		<h1>
-		Company Name: 
+		Konpayi Non: 
 		<input size= "50" type="text" name="Fullname3">
 		<br> 
 		
-		Street Address: 
+		Nimewo Kay: 
 		<input size= "50" type="text" name="Address3">
 		<br> 
 
-		City: 
-		<input size= "30" type="text" name="City3"> 
+		Vil:  
+		<input size= "20" type="text" name="City3"> 
 
-		State: 
+		Eta: 
 		<select name="state3" size="1">
-			<option value="">Select a state....</option>
+			<option value="">Chwazi yon eta...</option>
 			<option value="AL">Alabama</option>
 			<option value="AK">Alaska</option>
 			<option value="AZ">Arizona</option>
@@ -501,16 +476,16 @@ Outer Table
 			<option value="VI">Virgin Islands</option>
 		</select>
 	
-		Zip Code: 
+		Kòd Postal: 
 		<input size= "10" type="text" name="Zipcode3" >
 		<br> 
 
-		Telephone Number: 
+		Nimewo Telefòn:  
 		<input size= "12" type="text" name="Telephone3"> 
 
 		<br> 
 		<br> 
-		Give the date(s) and times you believe you were discriminated against: 
+		Bay dat (yo) ak lè ou kwè ou te viktim diskriminasyon oswa vanjans: 
 		<textarea rows="3" name="Dis_Date_Time3" cols="70"></textarea>
 
 	</h1>
@@ -524,7 +499,7 @@ Outer Table
 	<tr>
 	<td align=left>
 	<h1>
-	<b>Why do you<br>believe your<br>employer<br>discriminated or<br>retaliated against<br>you?</b>
+	<b>Pou kisa ou kwè patwon ou te fè diskriminasyon oswa vanjans kont ou? </b>
 	</h1>
 	</td>
 
@@ -536,169 +511,64 @@ Outer Table
 		<table width="100%" border="0" cellspacing="0" cellpadding="0"  align="center" cols=3>
 		<tr>
 		<td valign="top" width="35%">
-			<h1><b>Race</b></h1>
+			<h1><b>Ras</b></h1><h3>
+			<input type="hidden" name="Race41" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">Ameriken Natifnatal oswa Natifnatal Alaska
+Endike Afilyasyon Tribi a:<br><br>
+<input size= "10" type="text" name="Race4_Tribal_Affiliation4"><br>
+ 			<br>
 
-			<table border="0" cellspacing="5" cellpadding="0" class="table_font">
-			<tr>
-				<td valign="top">
-					<input type="checkbox" name="Race41" value="1">
-				</td>
-				<td valign="center">
-				
-					American Indian or Alaska Native <br>Indicate Tribal Affiliation
-					<input size= "10" type="text" name="Race4_Tribal_Affiliation4">
-				
-				</td>
-			</tr>
+			<input type="hidden" name="Race42" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">Azyatik<br>
+			<input type="hidden" name="Race43" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">Moun Nwa oswa Ameriken Nwa<br>
+			<input type="hidden" name="Race44" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">Natifnatal Zile Hawaii oswa Lòt Moun ki Fèt nan Zile Pasifik<br>
+			<input type="hidden" name="Race45" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">Moun Blan<br>
 
-
-			<tr>
-				<td valign="top">
-					<input type="checkbox" name="Race42" value="1">
-				</td>
-				<td valign="center">
-					Asian
-				</td>
-			</tr>
-
-
-			<tr>
-				<td valign="top">
-					<input type="checkbox" name="Race43" value="1">
-				</td>
-				<td valign="center">
-					Black or African American
-				</td>
-			</tr>
-
-			<tr>
-				<td valign="top">
-					<input type="checkbox" name="Race44" value="1">
-				</td>
-				<td valign="center">
-					Native Hawaiian or Other Pacific Islander
-				</td>
-			</tr>
-
-			<tr>
-				<td valign="top">
-					<input type="checkbox" name="Race45" value="1">
-				</td>
-				<td valign="center">
-					White
-				</td>
-			</tr>
-
-			</table>
-
-
+			</h3> 
+		</td>
 
 		<td valign="top" width="20%">
 			<h1>
-			<b>National Origin</b>
+			<b>Peyi kote Moun nan Fèt</b>
 			</h1>
-
-
-
-	<table border="0" cellspacing="5" cellpadding="0" class="table_font">
-			<tr>
-				<td valign="top"><input type="radio" value="1" name="National_Origin4"></td>
-				<td valign="center">Hispanic or Latino</td>
-			</tr>
-			<tr>
-				<td valign="top"><input type="radio" value="2" name="National_Origin4"></td>
-				<td valign="center">Other</td>
-			</tr>
-	</table>
-
-			<h1>
-			<input type="hidden" name="Color4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Color</b><br><br>
+			<h3>
+			<input type="radio" value="1" name="National_Origin4">Ispanik oswa<br> Latino-Ameriken<br> 
+			<input type="radio" value="2" name="National_Origin4">Lòt 
+			<br> 
+			<br>
+			</h3>
 			
-			<input type="hidden" name="Religion4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Religion</b><br><br>
+			<h1>
+			<input type="hidden" name="Color4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Koulè</b><br><br>
+			
+			<input type="hidden" name="Religion4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Relijyon</b><br><br>
 
-			<input type="hidden" name="Sex4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Sex</b><br><br>
+			<input type="hidden" name="Sex4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Sèks</b><br><br>
 
 			<br> 
 			</h1>
-
-
 		</td>
 
 		<td valign="top" width="30%">
+			<h1>
+			<input type="hidden" name="Sexual_Orientation4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Preferans Seksyèl</b><br><br>
 
-			<table border="0" cellspacing="5" cellpadding="0" class="table_font_title" >
-			<tr>
-				<td valign="top">
-					<input type="hidden" name="Sexual_Orientation4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">
-				</td>
-				<td valign="center">
-					<b>Sexual Orientation</b>	
-				</td>
-			</tr>
-			<tr>
-				<td valign="top">
-					<input type="hidden" name="Gender_Identity4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">
-				</td>
-				<td valign="center">
-					<b>Gender Identity</b>	
-				</td>
-			</tr>
-			<tr>
-				<td valign="top">
-					<input type="hidden" name="Inquiring_About_Pay4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">
-				</td>
-				<td valign="center">
-					<b>Inquiring About Pay</b>	
-				</td>
-			</tr>
-			<tr>
-				<td valign="top">
-					<input type="hidden" name="Discussing_Pay4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">
-				</td>
-				<td valign="center">
-					<b>Discussing Pay</b>	
-				</td>
-			</tr>
-			<tr>
-				<td valign="top">
-					<input type="hidden" name="Disclosing_Pay4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">
-				</td>
-				<td valign="center">
-					<b>Disclosing Pay</b>	
-				</td>
-			</tr>
-			</table>
+			<input type="hidden" name="Gender_Identity4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Idantite Seksyèl</b><br><br>
 
+			<input type="hidden" name="Inquiring_About_Pay4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Demann Enfòmasyon Sou Salè</b><br><br>
+
+			<input type="hidden" name="Discussing_Pay4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Diskisyon sou Salè</b><br><br>
+
+			<input type="hidden" name="Disclosing_Pay4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Divilgasyon Enfòmasyon sou Salè</b><br><br>
+			</h1> 
 		</td>
 
-		<td valign="top" width="30%">
-			<table border="0" cellspacing="5" cellpadding="0" class="table_font_title" >
-			<tr>
-				<td valign="top">
-					<input type="hidden" name="Protected_Veteran_Status4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">
-				</td>
-				<td valign="center">
-					<b>Protected Veteran Status</b>	
-				</td>
-			</tr>
-			<tr>
-				<td valign="top">
-					<input type="hidden" name="Disability4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">
-				</td>
-				<td valign="center">
-					<b>Disability</b>	
-				</td>
-			</tr>
-			<tr>
-				<td valign="top">
-					<input type="hidden" name="Retaliation4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">
-				</td>
-				<td valign="center">
-					<b>Retaliation</b>	
-				</td>
-			</tr>
-			</table>
+		<td valign="top" width="25%">
+			<h1>
+			<input type="hidden" name="Protected_Veteran_Status4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Kondisyon Veteran Pwoteje</b><br><br>
 
+			<input type="hidden" name="Disability4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Andikap</b><br><br>
+
+			<input type="hidden" name="Retaliation4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Vanjans</b><br><br>
+			</h1> 
 		</td>
 
 
@@ -713,15 +583,15 @@ Outer Table
 	<tr>
 	<th align = "left" colspan=3>
 		<h1>
-		<b>Where did you learn you could file a complaint with OFCCP?</b>
+		<b>Ki kote ou te aprann ou te kapab depoze yon plent ba OFCCP?</b>
 		<br>
 
-		<input type="radio" value="Internet" name="Complaint5" checked>Internet 
-		<input type="radio" value="Poster" name="Complaint5">Poster 
-		<input type="radio" value="Community Organization" name="Complaint5">Community Organization 
-		<input type="radio" value="OFCCP Meeting/Event" name="Complaint5">OFCCP Meeting/Event 
-		<input type="radio" value="Brochure" name="Complaint5">Brochure 
-		<input type="radio" value="Other" name="Complaint5">Other 
+		<input type="radio" value="Internet" name="Complaint5" checked>Entènèt 
+		<input type="radio" value="Poster" name="Complaint5">Afich  
+		<input type="radio" value="Community Organization" name="Complaint5">Òganizasyon Kominotè  
+		<input type="radio" value="OFCCP Meeting/Event" name="Complaint5">Reyinyon/Evènman OFCCP   
+		<input type="radio" value="Brochure" name="Complaint5">Tiliv 
+		<input type="radio" value="Other" name="Complaint5">Lòt  
 		<br>
 		</h1>
 	</th>
@@ -748,22 +618,22 @@ Outer Table
 	<tr>
 	<th align = "left" colspan=2>
 		<h1>
-		<b>Your Complaint:</b>
+		<b>Plent Ou:</b>
 		<br>
-		<b>Please describe below what you think the employer did or didn’t do that you believe caused 		discrimination or retaliation, including:</b>
+		<b>Tanpri dekri anba la a sa ou panse patwon ou te fè oswa pa t fè epi ou kwè sa te lakòz ou viktim diskriminasyon oswa vanjans, tankou:</b>
 
 		<ul>
-		<li>What actions the employer took against you.</li>
-		<li>Why you believe those actions were based on your: race; color; religion; sex; sexual orientation; gender identity; 		national origin; disability; veteran status; and/or inquiries 		about, discussions, or disclosures of your pay or the pay of others; and/or in retaliation for 		filing a complaint, participating in discrimination proceedings, opposing unlawful 		discrimination, or exercising any other rights protected by OFCCP.</li>
-		<li>When the employer actions happened, where they happened, and who was involved.</li>
-		<li>What harm, if any, you or others suffered because of the alleged discrimination or 		retaliation.</li>
-		<li>What explanation, if any, your employer or people representing your employer offered for 		their actions.</li>
-		<li>Who was in the same or similar situation as you and how they were treated? Include 		information such as the race, color, religion, sex, sexual orientation, gender identity, 		national origin, disability, or protected status of these individuals, if known.</li>
-		<li>What information you have about federal contracts the company that you worked for had at 		the time of the discrimination or retaliation you describe in this complaint.</li>
+		<li>Kisa aksyon patwon an te fè kont ou.</li>
+		<li>Pou kisa ou kwè aksyon yo te baze sou: ras ou; koulè ou; relijyon ou; sèks ou; preferans seksyèl ou; idantite seksyèl ou; peyi kote ou soti; andikap ou; kondisyon veteran ou; ak/oswa rechèch, diskisyon, divilgasyon enfòmasyon sou salè ou oswa salè lòt moun; epi/oswa nan vanjans pou depoze yon plent, patisipasyon nan pwosedi diskriminasyon, opozisyon nan diskriminasyon ilegal, oswa egzèsis nenpòt lòt dwa ki pwoteje avèk OFCCP.</li>
+		<li>Kilè patwon an te fè aksyon yo, kote aksyon yo te fèt, epi kimoun ki te konsène.</li>
+		<li>Ki domaj, si genyen, oumenm oswa lòt moun te soufri akòz diskriminasyon oswa vanjans ou sipoze a.</li>
+		<li>Ki eksplikasyon, si genyen, patwon ou oswa moun ki reprezante patwon ou te ofri pou aksyon yo.</li>
+		<li>Kimoun ki te nan menm sitiyasyon an oswa sitiyasyon sanblab tankou oumenm ak fason yo te trete. Mete enfòmasyon tankou ras, koulè, relijyon, sèks, preferans seksyèl, idantite seksyèl, peyi kote ou soti, andikap, oswa kondisyon pwoteje moun sa yo, si ou konnen yo.</li>
+		<li>Ki enfòmasyon ou genyen sou kontra federal konpayi kote ou t ap travay la te genyen nan moman diskriminasyon oswa vanjans ou dekri nan plent sa a.</li>
 		</ul>
 
 <div align="left">
-		<b>Please attach additional pages, if needed.</b>
+		<b>Tache paj siplemantè si li nesesè.</b>
 		<br>
 		<textarea rows="10" name="Narrative5" cols="80"></textarea>
 </div>
@@ -778,19 +648,19 @@ Outer Table
  	
 	<td width="20%" align=left>
 		<h1>
-		<b>Do you think the<br>discrimination<br>includes or affects<br>others?</b>
+		<b>Èske ou panse diskriminasyon an gen lòt moun ladan oswa afekte lòt moun?</b>
 		</h1>
 	</td>
 
 	<td align=left>
 		<h1>
-		Do you believe other employees or applicants were treated the same way as you described above?
+		Èske ou kwè lòt anplwaye yo oswa moun ki aplike yo te trete menm fason jan ou te dekri anwo a?
 		<br>
-		<input type="radio" value="Yes" name="Treated5">Yes 
-		<input type="radio" value="No" name="Treated5" checked>No 
+		<input type="radio" value="Yes" name="Treated5">Wi 
+		<input type="radio" value="No" name="Treated5" checked>Non 
 		<br>
 		<br>
-		<b>If so, please explain, using additional pages if necessary. </b>
+		<b>Si ou reponn wi, tanpri bay eksplikasyon avèk paj siplemantè, si li nesesè.</b>
 		<br>
 		<textarea rows="10" name="Narrative6" cols="80"></textarea>
 		</h1>
@@ -808,29 +678,29 @@ Outer Table
  	
 	<td align=left>
 		<h1>
-		<b>Do you have an<br>attorney or other<br>representative?</b>
+		<b>Èske ou gen yon avoka oswa lòt reprezantan?</b>
 		</h1>
 	</td>
 
 	<td align=left>
 		<h1>
-		If you are represented by an attorney, or another person, or an organization, please provide their contact information below.
+		Si ou gen reprezantasyon yon avoka, oswa yon lòt moun, oswa yon òganizasyon, tanpri bay enfòmasyon pou kontakte yo anba la a.
 		<br>
 <h1>
-		Name (First, Middle, Last): 
+		Non (Prenon, Dezyèm Prenon, Non Fanmi):   
 		<input size= "50" type="text" name="Fullname21">
 		<br> 
 
-		Street Address: 
+		Nimewo Kay: 
 		<input size= "50" type="text" name="Address21">
 		<br> 
 
-		City: 
-		<input bgcolor="#3CBC8D" size= "30" type="text" name="City21"> 
+		Vil:  
+		<input bgcolor="#3CBC8D" size= "20" type="text" name="City21"> 
 		
-		State: 
+		Eta: 
 		<select name="state21" size="1">
-			<option value="">Select a state....</option>
+			<option value="">Chwazi yon eta..</option>
 			<option value="AL">Alabama</option>
 			<option value="AK">Alaska</option>
 			<option value="AZ">Arizona</option>
@@ -887,20 +757,21 @@ Outer Table
 			<option value="VI">Virgin Islands</option>
 		</select>	
 
-		Zip Code: 
+		Kòd Postal:  
 		<input size= "10" type="text" name="Zipcode21">
 		<br> 
 
-		Telephone Number: 
+		Nimewo Telefòn:  
 		<input size= "12" type="text" name="Telephone21"> 
-		Email: 
-		<input size= "40" type="text" name="Email21">
+
+		Adrès Imèl:   
+		<input size= "30" type="text" name="Email21">
 		<br> 
 		<br>
-		Who should we contact if we need more information about your description of what occurred?
+		Kimoun nou ta dwe kontakte si nou bezwen plis enfòmasyon sou deskripsyon sa ki te pase a?
 		<br>
-		<input type="radio" value="Myself" name="Attorney5" checked>You 
-		<input type="radio" value="Representative" name="Attorney5">Your Representative 
+		<input type="radio" value="Myself" name="Attorney5" checked>Oumenm	
+		<input type="radio" value="Representative" name="Attorney5">Reprezantan Ou 
 		<br>
 		</h1>
 	</td>
@@ -914,22 +785,22 @@ Outer Table
  	
 	<td align=left>
 		<h1>
-		<b>Signature and<br>Verification</b>
+		<b>Siyati ak <br>Verifikasyon</b>
 		</h1>
 	</td>
 
 	<td align=left>
 		<h1>
-		I declare under penalty of perjury that the information given above is true 		and correct to the best of my knowledge or belief. A willful false 		statement is punishable by law.
+		Mwen deklare, anba menas sanksyon pou fo temwayaj, enfòmasyon mwen bay yo se enfòmasyon ki vrè dapre tout sa mwen konnen.  Lalwa ap pini mwen si mwen fè espre pou bay fo temwayaj.
 		<br>
 		<br>
-		I hereby authorize the release of any medical information needed for this 		investigation.
+Mwen bay otorizasyon pou yo divilge nenpòt enfòmasyon medikal ki nesesè pou ankèt sa a.
 		<br>
 		<br>
-		Signature of Complainant:
+		Siyati Moun ki Fè Plent lan: 
 		<textarea rows="1" name="Print_Signature" cols="20"></textarea>
 
-		Date: <input type="text" name="Print_Signature_Date" id="todays_date"> 
+		Dat la: <input type="text" name="Print_Signature_Date" id="todays_date"> 
 		<script type="text/javascript"> 
 			var d = new Date();
 			var n 	= d.getMonth()+1+"/"+d.getDate()+"/"+d.getFullYear();
@@ -948,16 +819,10 @@ Outer Table
 
 <div align="right">
 		<h1>
-		<button onclick="validateForm()">Submit</button>
+		<button onclick="validateForm()">Soumèt</button>
 		</h1>
 	<h1>
-	Form CC-4 (revised 01/20XX)
-
-
-
-
-
-
+	Fòm CC-4 (Revize 01/20XX)
 	</h1>
 </div>
 </td>

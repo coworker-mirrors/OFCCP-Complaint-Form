@@ -1,4 +1,4 @@
-<html>
+﻿<html>
 <!-------------------------------------------------------
 COMPANY: VIATEQ CORPORATION
 AUTHOR: Dennis Dunston
@@ -48,27 +48,6 @@ h3 {
 	font-weight: 500;
 	line-height: 11px;
 }
-
-.table_font {
-    	color: black;
-    	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-    	font-size: 12px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-	line-height: 11px;
-}
-
-.table_font_title {
-    	color: black;
-    	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-    	font-size: 14px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-	line-height: 15px;
-}
-
 input {
     border: 0;
     outline: 0;
@@ -82,11 +61,10 @@ textarea {
     background: #F0F8FF;
     border-bottom: 1px solid black;
 }
-
 </style>
 </HEAD>
 
-<TITLE>Form Translation</TITLE>
+<TITLE>Chinese Simplified Form Translation</TITLE>
 
 <body>
 <!-------------------------------------------------------
@@ -120,16 +98,9 @@ function print_form() {
 }
 
 function instructions() {
-    var myWindow = window.open("http://www.conceptlabs.com/viateq/demo/english_form_instructions.html","_blank", "height=900, width=650, status=yes, toolbar=no, menubar=no, location=no");
-
-
+    var myWindow = window.open("http://www.conceptlabs.com/viateq/demo/chinese_simplified_form_instructions.html","_blank", "height=900, width=650, status=yes, toolbar=no, menubar=no, location=no");
 }
 </script>
-
-
-
-
-
 
 <!-------------------------------------------------------
  
@@ -166,24 +137,23 @@ Outer Table
 		</td>
 		<td valign="top" align=right>
 			<h2>
-			Complaint Involving Employment Discrimination by a
-			<br>Federal Contractor or Subcontractor</h2>
+			涉及联邦政府承包商或分包商的就业歧视投诉</h2>
 			<h1>
 			<br>
-<a href="http://www.conceptlabs.com/viateq/demo/english_form_instructions.html" target="_blank" >Please read the instructions before completing this form.</a><br>
+<a href="http://www.conceptlabs.com/viateq/demo/chinese_simplified_form_instructions.html" target="_blank" >请在填写此表格之前阅读说明。</a><br>
 
 			</h1>
 		</td>
 		</tr>
 		<tr>
 		<td align=left>
-			<h1>OMB: 1250-0002<br>Expires: XXXX</h1>
+			<h1>OMB: 1250-0002<br>有效期: XXXX</h1>
 		</td>
 		<td align=right>
 			<h1>
-			<button onclick="validateForm()">Submit</button>
-			<button onclick="clear_form()">Reset Form</button>
-			<button onclick="print_form()">Print Form</button>
+			<button onclick="validateForm()">提交</button>
+			<button onclick="clear_form()">重置表单</button>
+			<button onclick="print_form()">打印表单</button>
 			</h1>
 		</td>
 		</tr>
@@ -204,27 +174,26 @@ Outer Table
 
 	<td width="20%" align=left>
 		<h1>
-		<b>How can we<br>reach you?</b>
+		<b>我们如何与您联系？</b>
 		</h1>
 	</td>
 
 	<td align=left>
- <input type="hidden" name="Form_Language" value="English">
-		<h1>
-		Name (First, Middle, Last): 
+ <input type="hidden" name="Form_Language" value="ChineseS">		<h1>
+		姓名（名，中间名，姓氏）： 
 		<input size= "50" type="text" name="Fullname1">
 		<br> 
 
-		Street Address: 
+		街道地址:   
 		<input size= "50" type="text" name="Address1">
 		<br> 
 
-		City: 
+		城市:  
 		<input bgcolor="#3CBC8D" size= "30" type="text" name="City1"> 
 		
-		State: 
+		州:   
 		<select name="state1" size="1">
-			<option value="">Select a state....</option>
+			<option value="">州....</option>
 			<option value="AL">Alabama</option>
 			<option value="AK">Alaska</option>
 			<option value="AZ">Arizona</option>
@@ -281,42 +250,40 @@ Outer Table
 			<option value="VI">Virgin Islands</option>
 		</select>	
 
-		Zip Code: 
+		邮政编码:  
 		<input size= "10" type="text" name="Zipcode1">
 		<br> 
 
-		Telephone Number: 
+		电话号码: 
 		<input size= "12" type="text" name="Telephone1"> 
-		<input type="radio" value="1" name="Telephone_type1" checked>Home
-		<input type="radio" value="2" name="Telephone_type1">Work 
-		<input type="radio" value="3" name="Telephone_type1">Cell
+		<input type="radio" value="1" name="Telephone_type1" checked>宅电
+		<input type="radio" value="2" name="Telephone_type1">工作电话 
+		<input type="radio" value="3" name="Telephone_type1">手机
 		<br> 
 
-		Email: 
+		电子邮件: 
 		<input size= "40" type="text" name="Email1">
 		<br>
 		<br>
-		Have you filed these allegations of employment discrimination with another federal or local agency? <br>
+		您是否已经向另一个联邦或地方机构提交了这些有关就业歧视的指控？<br>
 
-		<input type="radio" value="1" id="Allegations1yes" name="Allegations1">Yes&nbsp;
-		<input checked type="radio" value="2" id="Allegations1no" name="Allegations1" onClick="return a=justclear()">No&nbsp; 
+		<input type="radio" value="1" id="Allegations1yes" name="Allegations1">是&nbsp;
+		<input checked type="radio" value="2" id="Allegations1no" name="Allegations1" onClick="return a=justclear()">否&nbsp; 
 		<br> 
 		<br>
-		If yes, which agency: 
+		如果是，哪个机构:   
 		<input size= "40" type="text" name="Agency_Name1" id="Agency_Name1" onMouseout="justclear2()"> 
 		<br>
 
-		Contact Name: 
+		联系人姓名： 
 		<input size= "23" type="text" name="Agency_POC1" id="Agency_POC1" > 
 
-		Phone Number: 
+		电话号码：  
 		<input size= "12" type="text" name="Agency_Telephone1" id="Agency_Telephone1"> 
 	</h1>
 	</td>
 
 	</tr>
-
-
 
 	<!------------------------
 	SECOND ROW
@@ -324,26 +291,25 @@ Outer Table
 	<tr>
 	<td align=left>
 		<h1>
-		<b>Who can we<br>contact if we<br>cannot reach<br>you?</b>
+		<b>如果我们无法与您联系，我们联系谁？</b>
 		</h1>
 	</td>
 	<td align=left>
 		<h1>
-		Name (First, Middle, Last): 
+		姓名（名，中间名，姓氏）： 
 		<input size= "50" type="text" name="Fullname2">
 		<br> 
 
-		Street Address: 
+		街道地址:  
 		<input size= "50" type="text" name="Address2">
 		<br> 
 
-		City: 
+		城市:  
 		<input bgcolor="#3CBC8D" size= "30" type="text" name="City2"> 
 		
-
-		State: 
+		州:  
 		<select name="state2" size="1">
-			<option value="">Select a state....</option>
+			<option value="">州: ....</option>
 			<option value="AL">Alabama</option>
 			<option value="AK">Alaska</option>
 			<option value="AZ">Arizona</option>
@@ -400,17 +366,17 @@ Outer Table
 			<option value="VI">Virgin Islands</option>
 		</select>	
 
-		Zip Code: 
+		邮政编码:
 		<input size= "10" type="text" name="Zipcode2"><br> 
 
-		Telephone Number: 
+		电话号码: 
 		<input size= "10" type="text" name="Telephone2"> 
-		<input type="radio" value="1" name="Telephone_type2">Home
-		<input type="radio" value="2" name="Telephone_type2" checked>Work 
-		<input type="radio" value="3" name="Telephone_type2">Cell
+		<input type="radio" value="1" name="Telephone_type2">宅电
+		<input type="radio" value="2" name="Telephone_type2" checked>工作电话 
+		<input type="radio" value="3" name="Telephone_type2">手机
 		<br> 
 
-		Email: 
+		电子邮件:  
 		<input size= "40" type="text" name="Email2">
 
 		</h1>
@@ -425,26 +391,26 @@ Outer Table
 	<tr>
 	<td align=left>
 		<h1>
-		<b>What is the name<br>of the employer<br>that you believe<br>discriminated or<br>			retaliated against<br>you?</b>
+		<b>您认为歧视或报复您的雇主的名字是什么？</b>
 		</h1>
 	</td>
 
 	<td align=left>	
 		<h1>
-		Company Name: 
+		公司名称:  
 		<input size= "50" type="text" name="Fullname3">
 		<br> 
 		
-		Street Address: 
+		街道地址:  
 		<input size= "50" type="text" name="Address3">
 		<br> 
 
-		City: 
+		城市: 
 		<input size= "30" type="text" name="City3"> 
 
-		State: 
+		州:
 		<select name="state3" size="1">
-			<option value="">Select a state....</option>
+			<option value="">州?....</option>
 			<option value="AL">Alabama</option>
 			<option value="AK">Alaska</option>
 			<option value="AZ">Arizona</option>
@@ -501,16 +467,16 @@ Outer Table
 			<option value="VI">Virgin Islands</option>
 		</select>
 	
-		Zip Code: 
+		邮政编码:  
 		<input size= "10" type="text" name="Zipcode3" >
 		<br> 
 
-		Telephone Number: 
+		电话号码:   
 		<input size= "12" type="text" name="Telephone3"> 
 
 		<br> 
 		<br> 
-		Give the date(s) and times you believe you were discriminated against: 
+		提供您认为您受到歧视或报复的日期和时间：  
 		<textarea rows="3" name="Dis_Date_Time3" cols="70"></textarea>
 
 	</h1>
@@ -524,7 +490,7 @@ Outer Table
 	<tr>
 	<td align=left>
 	<h1>
-	<b>Why do you<br>believe your<br>employer<br>discriminated or<br>retaliated against<br>you?</b>
+	<b>您为什么认为您的雇主对您有歧视或报复？</b>
 	</h1>
 	</td>
 
@@ -536,169 +502,63 @@ Outer Table
 		<table width="100%" border="0" cellspacing="0" cellpadding="0"  align="center" cols=3>
 		<tr>
 		<td valign="top" width="35%">
-			<h1><b>Race</b></h1>
+			<h1><b>种族</b></h1><h3>
+			<input type="hidden" name="Race41" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">美国印第安人或阿拉斯加原<br>住民<br>表明部落关系<br><br>
+<input size= "10" type="text" name="Race4_Tribal_Affiliation4"><br>
+ 			<br>
 
-			<table border="0" cellspacing="5" cellpadding="0" class="table_font">
-			<tr>
-				<td valign="top">
-					<input type="checkbox" name="Race41" value="1">
-				</td>
-				<td valign="center">
-				
-					American Indian or Alaska Native <br>Indicate Tribal Affiliation
-					<input size= "10" type="text" name="Race4_Tribal_Affiliation4">
-				
-				</td>
-			</tr>
+			<input type="hidden" name="Race42" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">亚裔<br>
+			<input type="hidden" name="Race43" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">黑人或非裔美国人<br>
+			<input type="hidden" name="Race44" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">夏威夷原住民或其他太平洋岛民<br>
+			<input type="hidden" name="Race45" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">白人<br>
 
-
-			<tr>
-				<td valign="top">
-					<input type="checkbox" name="Race42" value="1">
-				</td>
-				<td valign="center">
-					Asian
-				</td>
-			</tr>
-
-
-			<tr>
-				<td valign="top">
-					<input type="checkbox" name="Race43" value="1">
-				</td>
-				<td valign="center">
-					Black or African American
-				</td>
-			</tr>
-
-			<tr>
-				<td valign="top">
-					<input type="checkbox" name="Race44" value="1">
-				</td>
-				<td valign="center">
-					Native Hawaiian or Other Pacific Islander
-				</td>
-			</tr>
-
-			<tr>
-				<td valign="top">
-					<input type="checkbox" name="Race45" value="1">
-				</td>
-				<td valign="center">
-					White
-				</td>
-			</tr>
-
-			</table>
-
-
+			</h3> 
+		</td>
 
 		<td valign="top" width="20%">
 			<h1>
-			<b>National Origin</b>
+			<b>国籍</b>
 			</h1>
-
-
-
-	<table border="0" cellspacing="5" cellpadding="0" class="table_font">
-			<tr>
-				<td valign="top"><input type="radio" value="1" name="National_Origin4"></td>
-				<td valign="center">Hispanic or Latino</td>
-			</tr>
-			<tr>
-				<td valign="top"><input type="radio" value="2" name="National_Origin4"></td>
-				<td valign="center">Other</td>
-			</tr>
-	</table>
-
-			<h1>
-			<input type="hidden" name="Color4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Color</b><br><br>
+			<h3>
+			<input type="radio" value="1" name="National_Origin4">西班牙裔或拉丁裔<br> 
+			<input type="radio" value="2" name="National_Origin4">其他 
+			<br> 
+			<br>
+			</h3>
 			
-			<input type="hidden" name="Religion4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Religion</b><br><br>
+			<h1>
+			<input type="hidden" name="Color4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>膚色</b><br><br>
+			
+			<input type="hidden" name="Religion4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>宗教</b><br><br>
 
-			<input type="hidden" name="Sex4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>Sex</b><br><br>
+			<input type="hidden" name="Sex4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>性别</b><br><br>
 
 			<br> 
 			</h1>
-
-
 		</td>
 
 		<td valign="top" width="30%">
+			<h1>
+			<input type="hidden" name="Sexual_Orientation4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>性取向</b><br><br>
 
-			<table border="0" cellspacing="5" cellpadding="0" class="table_font_title" >
-			<tr>
-				<td valign="top">
-					<input type="hidden" name="Sexual_Orientation4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">
-				</td>
-				<td valign="center">
-					<b>Sexual Orientation</b>	
-				</td>
-			</tr>
-			<tr>
-				<td valign="top">
-					<input type="hidden" name="Gender_Identity4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">
-				</td>
-				<td valign="center">
-					<b>Gender Identity</b>	
-				</td>
-			</tr>
-			<tr>
-				<td valign="top">
-					<input type="hidden" name="Inquiring_About_Pay4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">
-				</td>
-				<td valign="center">
-					<b>Inquiring About Pay</b>	
-				</td>
-			</tr>
-			<tr>
-				<td valign="top">
-					<input type="hidden" name="Discussing_Pay4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">
-				</td>
-				<td valign="center">
-					<b>Discussing Pay</b>	
-				</td>
-			</tr>
-			<tr>
-				<td valign="top">
-					<input type="hidden" name="Disclosing_Pay4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">
-				</td>
-				<td valign="center">
-					<b>Disclosing Pay</b>	
-				</td>
-			</tr>
-			</table>
+			<input type="hidden" name="Gender_Identity4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>性别认同</b><br><br>
 
+			<input type="hidden" name="Inquiring_About_Pay4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>查询付款</b><br><br>
+
+			<input type="hidden" name="Discussing_Pay4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>讨论付款</b><br><br>
+
+			<input type="hidden" name="Disclosing_Pay4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>披露付款</b><br><br>
+			</h1> 
 		</td>
 
-		<td valign="top" width="30%">
-			<table border="0" cellspacing="5" cellpadding="0" class="table_font_title" >
-			<tr>
-				<td valign="top">
-					<input type="hidden" name="Protected_Veteran_Status4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">
-				</td>
-				<td valign="center">
-					<b>Protected Veteran Status</b>	
-				</td>
-			</tr>
-			<tr>
-				<td valign="top">
-					<input type="hidden" name="Disability4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">
-				</td>
-				<td valign="center">
-					<b>Disability</b>	
-				</td>
-			</tr>
-			<tr>
-				<td valign="top">
-					<input type="hidden" name="Retaliation4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">
-				</td>
-				<td valign="center">
-					<b>Retaliation</b>	
-				</td>
-			</tr>
-			</table>
+		<td valign="top" width="25%">
+			<h1>
+			<input type="hidden" name="Protected_Veteran_Status4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>受保护的退伍军人身份</b><br><br>
 
+			<input type="hidden" name="Disability4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>残疾</b><br><br>
+
+			<input type="hidden" name="Retaliation4" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"><b>报复</b><br><br>
+			</h1> 
 		</td>
 
 
@@ -713,15 +573,15 @@ Outer Table
 	<tr>
 	<th align = "left" colspan=3>
 		<h1>
-		<b>Where did you learn you could file a complaint with OFCCP?</b>
+		<b>您在哪里得知您可以向OFCCP提出投诉？</b>
 		<br>
 
-		<input type="radio" value="Internet" name="Complaint5" checked>Internet 
-		<input type="radio" value="Poster" name="Complaint5">Poster 
-		<input type="radio" value="Community Organization" name="Complaint5">Community Organization 
-		<input type="radio" value="OFCCP Meeting/Event" name="Complaint5">OFCCP Meeting/Event 
-		<input type="radio" value="Brochure" name="Complaint5">Brochure 
-		<input type="radio" value="Other" name="Complaint5">Other 
+		<input type="radio" value="Internet" name="Complaint5" checked>互联网  
+		<input type="radio" value="Poster" name="Complaint5">海报   
+		<input type="radio" value="Community Organization" name="Complaint5">社区组织
+		<input type="radio" value="OFCCP Meeting/Event" name="Complaint5">OFCCP 会议/活动     
+		<input type="radio" value="Brochure" name="Complaint5">手册 
+		<input type="radio" value="Other" name="Complaint5">其他
 		<br>
 		</h1>
 	</th>
@@ -748,22 +608,22 @@ Outer Table
 	<tr>
 	<th align = "left" colspan=2>
 		<h1>
-		<b>Your Complaint:</b>
+		<b>您的投诉：</b>
 		<br>
-		<b>Please describe below what you think the employer did or didn�t do that you believe caused 		discrimination or retaliation, including:</b>
+		<b>请在下面描述您认为雇主从事或未从事您认为造成歧视或报复的行为，包括：</b>
 
 		<ul>
-		<li>What actions the employer took against you.</li>
-		<li>Why you believe those actions were based on your: race; color; religion; sex; sexual orientation; gender identity; 		national origin; disability; veteran status; and/or inquiries 		about, discussions, or disclosures of your pay or the pay of others; and/or in retaliation for 		filing a complaint, participating in discrimination proceedings, opposing unlawful 		discrimination, or exercising any other rights protected by OFCCP.</li>
-		<li>When the employer actions happened, where they happened, and who was involved.</li>
-		<li>What harm, if any, you or others suffered because of the alleged discrimination or 		retaliation.</li>
-		<li>What explanation, if any, your employer or people representing your employer offered for 		their actions.</li>
-		<li>Who was in the same or similar situation as you and how they were treated? Include 		information such as the race, color, religion, sex, sexual orientation, gender identity, 		national origin, disability, or protected status of these individuals, if known.</li>
-		<li>What information you have about federal contracts the company that you worked for had at 		the time of the discrimination or retaliation you describe in this complaint.</li>
+		<li>雇主对你采取了什么行动。</li>
+		<li>为什么你认为这些行动是基于你的：种族;肤色;宗教;性别;性取向;性别认同;国籍;残疾;退伍状态;和/或查询、讨论或披露您的薪酬或他人的薪酬;和/或报复投诉、参与歧视诉讼、反对非法歧视或行使OFCCP保护的任何其他权利。</li>
+		<li>雇主行动发生的时间、地点以及涉事人员。</li>
+		<li>如果有的话，您或其他人因指称的歧视或报复而受到伤害。</li>
+		<li>如果有的话，您的雇主或代表您雇主的人为他们的行动作何解释。</li>
+		<li>谁是与你的情况相同或相似，他们是如何被对待的。包括种族、肤色、宗教、性别、性取向、性别认同、国籍、残疾或这些人的受保护身份（如果知道的话）的信息。</li>
+		<li>您在本投诉中描述的歧视或报复之时，有关您工作所在公司的联邦合同的信息。</li>
 		</ul>
 
 <div align="left">
-		<b>Please attach additional pages, if needed.</b>
+		<b>如果需要，请附加其他页面。</b>
 		<br>
 		<textarea rows="10" name="Narrative5" cols="80"></textarea>
 </div>
@@ -778,19 +638,19 @@ Outer Table
  	
 	<td width="20%" align=left>
 		<h1>
-		<b>Do you think the<br>discrimination<br>includes or affects<br>others?</b>
+		<b>你认为歧视包括或影响他人吗？</b>
 		</h1>
 	</td>
 
 	<td align=left>
 		<h1>
-		Do you believe other employees or applicants were treated the same way as you described above?
+		您认为其他员工或申请人是否按照上述方式处理吗？
 		<br>
-		<input type="radio" value="Yes" name="Treated5">Yes 
-		<input type="radio" value="No" name="Treated5" checked>No 
+		<input type="radio" value="Yes" name="Treated5">是 
+		<input type="radio" value="No" name="Treated5" checked>否 
 		<br>
 		<br>
-		<b>If so, please explain, using additional pages if necessary. </b>
+		<b>如果是，请解释，如有必要，使用其他页面。</b>
 		<br>
 		<textarea rows="10" name="Narrative6" cols="80"></textarea>
 		</h1>
@@ -808,29 +668,29 @@ Outer Table
  	
 	<td align=left>
 		<h1>
-		<b>Do you have an<br>attorney or other<br>representative?</b>
+		<b>你有律师或其他代表吗？</b>
 		</h1>
 	</td>
 
 	<td align=left>
 		<h1>
-		If you are represented by an attorney, or another person, or an organization, please provide their contact information below.
+		如果您由律师，其他人或组织代表，请在下面提供他们的联系信息。
 		<br>
 <h1>
-		Name (First, Middle, Last): 
+		姓名 （名，中间名，姓氏）：
 		<input size= "50" type="text" name="Fullname21">
 		<br> 
 
-		Street Address: 
+		街道地址:   
 		<input size= "50" type="text" name="Address21">
 		<br> 
 
-		City: 
+		城市:  
 		<input bgcolor="#3CBC8D" size= "30" type="text" name="City21"> 
 		
-		State: 
+		州: 
 		<select name="state21" size="1">
-			<option value="">Select a state....</option>
+			<option value="">州?....</option>
 			<option value="AL">Alabama</option>
 			<option value="AK">Alaska</option>
 			<option value="AZ">Arizona</option>
@@ -887,20 +747,21 @@ Outer Table
 			<option value="VI">Virgin Islands</option>
 		</select>	
 
-		Zip Code: 
+		邮政编码: 
 		<input size= "10" type="text" name="Zipcode21">
 		<br> 
 
-		Telephone Number: 
+		电话号码:  
 		<input size= "12" type="text" name="Telephone21"> 
-		Email: 
+
+		电子邮件:  
 		<input size= "40" type="text" name="Email21">
 		<br> 
 		<br>
-		Who should we contact if we need more information about your description of what occurred?
+		如果我們需要更多關於您所發生情況的描述的更多資訊，我們應該联络誰？
 		<br>
-		<input type="radio" value="Myself" name="Attorney5" checked>You 
-		<input type="radio" value="Representative" name="Attorney5">Your Representative 
+		<input type="radio" value="Myself" name="Attorney5" checked>您本人 
+		<input type="radio" value="Representative" name="Attorney5">您的代表 
 		<br>
 		</h1>
 	</td>
@@ -914,22 +775,22 @@ Outer Table
  	
 	<td align=left>
 		<h1>
-		<b>Signature and<br>Verification</b>
+		<b>签名和验证</b>
 		</h1>
 	</td>
 
 	<td align=left>
 		<h1>
-		I declare under penalty of perjury that the information given above is true 		and correct to the best of my knowledge or belief. A willful false 		statement is punishable by law.
+		本人声明，根据本人所知所信，以上提供的信息真实且正确。故意的虚假陈述应受法律惩罚。
 		<br>
 		<br>
-		I hereby authorize the release of any medical information needed for this 		investigation.
+		本人在此授权发布本次调查所需的任何医疗信息。
 		<br>
 		<br>
-		Signature of Complainant:
+		投诉人签名:  
 		<textarea rows="1" name="Print_Signature" cols="20"></textarea>
 
-		Date: <input type="text" name="Print_Signature_Date" id="todays_date"> 
+		日期:  <input type="text" name="Print_Signature_Date" id="todays_date"> 
 		<script type="text/javascript"> 
 			var d = new Date();
 			var n 	= d.getMonth()+1+"/"+d.getDate()+"/"+d.getFullYear();
@@ -948,16 +809,10 @@ Outer Table
 
 <div align="right">
 		<h1>
-		<button onclick="validateForm()">Submit</button>
+		<button onclick="validateForm()">提交</button>
 		</h1>
 	<h1>
-	Form CC-4 (revised 01/20XX)
-
-
-
-
-
-
+	表格 CC-4 (修订于 01/20XX)
 	</h1>
 </div>
 </td>
